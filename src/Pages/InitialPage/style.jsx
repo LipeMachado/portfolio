@@ -82,7 +82,7 @@ export const HomeContainerImageDiv = styled.div`
 `;
 
 export const HomeImageSvg = styled.img`
-    width: 100%;
+    width: 90%;
 `;
 
 export const WhoAmISection = styled.section`
@@ -121,4 +121,37 @@ export const WhoAmINameH2 = styled.h2`
 export const WhoAmINameP = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
+`;
+
+export const ProjectsSection = styled.section`
+    background-color: var(--background);
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    padding: 7rem 7rem;
+`;
+
+export const ProjectsContainerDiv = styled.div`
+    display: grid;
+    grid-template-columns: 18rem 18rem 18rem;
+    grid-gap: 100px 80px;
+
+    div {
+        width: 18rem;
+        height: 12rem;
+        border: 2px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--background-light);
+        transition: all 0.5s;
+        cursor: pointer;
+
+        img {
+            width: 200px;
+        }
+
+        &:hover {
+            border: 2px solid var(--purple-light);
+        }
+    }
 `;

@@ -16,11 +16,21 @@ import {
     ImageWhoAmIImg,
     WhoAmITextDiv,
     WhoAmINameH2,
-    WhoAmINameP
+    WhoAmINameP,
+    ProjectsSection,
+    ProjectsContainerDiv
 } from './style.jsx'
+
+import { CardProjects } from '../../Components/CardProjects/'
 
 import homeImage from '../../Images/homeImage.svg'
 import whoIAm from '../../Images/whoIAm.svg'
+import nftCard from '../../Images/nftCard.jpg'
+import orderSummary from '../../Images/orderSummary.jpg'
+import profileCard from '../../Images/profileCard.jpg'
+import qrCode from '../../Images/qrCode.jpg'
+import statsPreview from '../../Images/statsPreview.jpg'
+import codarWebsite from '../../Images/codarWebsite.jpeg'
 
 export function InitialPage() {
     return (
@@ -39,6 +49,7 @@ export function InitialPage() {
             </Header>
 
             <Main>
+
                 <HomeSection>
                     <GridLayoutDiv>
                         <HomeDiv>
@@ -79,6 +90,18 @@ export function InitialPage() {
                     </GridLayoutDiv>
                 </WhoAmISection>
 
+                <ProjectsSection>
+                    <GridLayoutDiv>
+                        <ProjectsContainerDiv>
+                            <CardProjects src={nftCard} href={"https://github.com/LipeMachado/nftCard-Challenge"}/>
+                            <CardProjects src={orderSummary} href={"https://github.com/LipeMachado/orderSummary-Challenge"} />
+                            <CardProjects src={profileCard} href={"https://github.com/LipeMachado/profileCard-Challenge"} />
+                            <CardProjects src={qrCode} href={"https://github.com/LipeMachado/qrCode-Challenge"} />
+                            <CardProjects src={statsPreview} href={"https://github.com/LipeMachado/statsPreview-Challenge"} />
+                            <CardProjects src={codarWebsite} href={"https://github.com/LipeMachado/codar-Challenge"} />
+                        </ProjectsContainerDiv>
+                    </GridLayoutDiv>
+                </ProjectsSection>
 
             </Main>
         </>
