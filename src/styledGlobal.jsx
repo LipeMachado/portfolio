@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #0e091b;
         --background-black: #060509;
+        --background-light: #171026;
         --scroll-background: #6610f2;
         --white: #ffffff;
         --purple-light: #894ee7;

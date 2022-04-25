@@ -71,7 +71,8 @@ export function InitialPage() {
                             <WhoAmITextDiv>
                                 <WhoAmINameH2>Felipe Silva <span>.</span></WhoAmINameH2>
                                 <WhoAmINameP>
-                                    Hello, my name is Felipe Silva, I'm a frontend developer.
+                                    Hi, my name is Felipe Silva. I'm a frontend developer.
+                                    I develop responsive and minimalist websites.
                                 </WhoAmINameP>
                             </WhoAmITextDiv>
                         </WhoAmIDiv>

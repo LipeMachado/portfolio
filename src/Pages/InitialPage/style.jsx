@@ -86,7 +86,7 @@ export const HomeImageSvg = styled.img`
 `;
 
 export const WhoAmISection = styled.section`
-    background-color: var(--background-black);
+    background-color: var(--background-light);
     padding: 96px 48px;
 `;
 
@@ -105,7 +105,7 @@ export const ImageWhoAmIImg = styled.img`
 `;
 
 export const WhoAmITextDiv = styled.div`
-    
+
 `;
 
 export const WhoAmINameH2 = styled.h2`
