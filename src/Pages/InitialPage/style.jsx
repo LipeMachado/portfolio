@@ -64,7 +64,7 @@ export const HomeDiv = styled.div`
 `;
 
 export const HomeContainerTextDiv = styled.div`
-    width: 60%;
+    width: 100%;
 
     h1 {
         font-size: 2rem;
@@ -78,11 +78,11 @@ export const HomeContainerTextDiv = styled.div`
 `;
 
 export const HomeContainerImageDiv = styled.div`
-    
+    width: 65%;
 `;
 
 export const HomeImageSvg = styled.img`
-    width: 90%;
+    width: 100%;
 `;
 
 export const WhoAmISection = styled.section`
