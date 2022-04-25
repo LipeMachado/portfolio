@@ -91,5 +91,34 @@ export const WhoAmISection = styled.section`
 `;
 
 export const WhoAmIDiv = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const ImageWhoAmIDiv = styled.div`
+    width: 50%;
+    padding-right: 100px;
+`;
+
+export const ImageWhoAmIImg = styled.img`
+    width: 400px;
+`;
+
+export const WhoAmITextDiv = styled.div`
     
+`;
+
+export const WhoAmINameH2 = styled.h2`
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+    span {
+        font-size: 4rem;
+        color: var(--purple-light);
+    }
+`;
+
+export const WhoAmINameP = styled.p`
+    font-size: 1.2rem;
+    font-weight: 300;
 `;

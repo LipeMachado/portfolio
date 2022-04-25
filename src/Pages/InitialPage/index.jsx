@@ -11,10 +11,16 @@ import {
     HomeContainerImageDiv,
     HomeImageSvg,
     WhoAmISection,
-    WhoAmIDiv
+    WhoAmIDiv,
+    ImageWhoAmIDiv,
+    ImageWhoAmIImg,
+    WhoAmITextDiv,
+    WhoAmINameH2,
+    WhoAmINameP
 } from './style.jsx'
 
 import homeImage from '../../Images/homeImage.svg'
+import whoIAm from '../../Images/whoIAm.svg'
 
 export function InitialPage() {
     return (
@@ -59,10 +65,20 @@ export function InitialPage() {
                 <WhoAmISection>
                     <GridLayoutDiv>
                         <WhoAmIDiv>
-                            
+                            <ImageWhoAmIDiv>
+                                <ImageWhoAmIImg src={whoIAm}/>
+                            </ImageWhoAmIDiv>
+                            <WhoAmITextDiv>
+                                <WhoAmINameH2>Felipe Silva <span>.</span></WhoAmINameH2>
+                                <WhoAmINameP>
+                                    Hello, my name is Felipe Silva, I'm a frontend developer.
+                                </WhoAmINameP>
+                            </WhoAmITextDiv>
                         </WhoAmIDiv>
                     </GridLayoutDiv>
                 </WhoAmISection>
+
+
             </Main>
         </>
     );
