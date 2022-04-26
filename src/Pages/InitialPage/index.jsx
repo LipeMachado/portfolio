@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-scroll';
 import {
     Header,
     NavBarNav,
@@ -18,6 +19,7 @@ import {
     WhoAmINameH2,
     WhoAmINameP,
     ProjectsSection,
+    ProjectsTitleH1,
     ProjectsContainerDiv
 } from './style.jsx'
 
@@ -40,8 +42,8 @@ export function InitialPage() {
                     <NavBarNav>
                         <h1>POWFOLIO</h1>
                         <NavListUl>
-                            <li><a>Who am I?</a></li>
-                            <li><a>Projects</a></li>
+                            <li><Link to="whoAmI">Who am I?</Link></li>
+                            <li><Link to="projects">Projects</Link></li>
                             <li><a>Skills</a></li>
                         </NavListUl>
                     </NavBarNav>
@@ -49,7 +51,6 @@ export function InitialPage() {
             </Header>
 
             <Main>
-
                 <HomeSection>
                     <GridLayoutDiv>
                         <HomeDiv>
@@ -73,7 +74,7 @@ export function InitialPage() {
                     </GridLayoutDiv>
                 </HomeSection>
 
-                <WhoAmISection>
+                <WhoAmISection id="whoAmI">
                     <GridLayoutDiv>
                         <WhoAmIDiv>
                             <ImageWhoAmIDiv>
@@ -90,8 +91,9 @@ export function InitialPage() {
                     </GridLayoutDiv>
                 </WhoAmISection>
 
-                <ProjectsSection>
+                <ProjectsSection id="projects">
                     <GridLayoutDiv>
+                        <ProjectsTitleH1>Projects</ProjectsTitleH1>
                         <ProjectsContainerDiv>
                             <CardProjects src={nftCard} href={"https://github.com/LipeMachado/nftCard-Challenge"}/>
                             <CardProjects src={orderSummary} href={"https://github.com/LipeMachado/orderSummary-Challenge"} />
@@ -102,7 +104,6 @@ export function InitialPage() {
                         </ProjectsContainerDiv>
                     </GridLayoutDiv>
                 </ProjectsSection>
-
             </Main>
         </>
     );

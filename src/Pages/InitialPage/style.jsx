@@ -127,31 +127,16 @@ export const ProjectsSection = styled.section`
     background-color: var(--background);
     padding: 2rem 0 2rem 0;
     display: flex;
-    padding: 7rem 7rem;
+    padding: 2rem 5rem 7rem 5rem;
+`;
+
+export const ProjectsTitleH1 = styled.h1`
+    text-align: center;
+    margin-bottom: 3.5rem;
 `;
 
 export const ProjectsContainerDiv = styled.div`
     display: grid;
     grid-template-columns: 18rem 18rem 18rem;
     grid-gap: 100px 80px;
-
-    div {
-        width: 18rem;
-        height: 12rem;
-        border: 2px solid transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--background-light);
-        transition: all 0.5s;
-        cursor: pointer;
-
-        img {
-            width: 200px;
-        }
-
-        &:hover {
-            border: 2px solid var(--purple-light);
-        }
-    }
 `;
