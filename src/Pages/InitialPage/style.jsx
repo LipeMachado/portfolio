@@ -12,7 +12,6 @@ export const NavBarNav = styled.nav`
     height: 10vh;
     display: flex;
     align-items: center;
-    padding: 0px 8px;
     justify-content: space-between;
 
     h1 {
