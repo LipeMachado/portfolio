@@ -83,6 +83,11 @@ export const HomeContainerImageDiv = styled.div`
 
 export const HomeImageSvg = styled.img`
     width: 100%;
+    transition: all 0.8s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `;
 
 export const WhoAmISection = styled.section`
@@ -102,6 +107,12 @@ export const ImageWhoAmIDiv = styled.div`
 
 export const ImageWhoAmIImg = styled.img`
     width: 400px;
+
+    transition: all 0.8s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `;
 
 export const WhoAmITextDiv = styled.div`
