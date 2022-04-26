@@ -8,7 +8,7 @@ export const ProjectsDiv = styled.div`
     align-items: center;
     justify-content: center;
     background-color: var(--background-light);
-    transition: all 0.5s;
+    transition: all 0.3s;
     cursor: pointer;
     border-radius: 5px;
 
