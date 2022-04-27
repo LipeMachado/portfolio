@@ -20,7 +20,8 @@ import {
     WhoAmINameP,
     ProjectsSection,
     ProjectsTitleH1,
-    ProjectsContainerDiv
+    ProjectsContainerDiv,
+    SkillsSection
 } from './style.jsx'
 
 import { CardProjects } from '../../Components/CardProjects/'
@@ -44,7 +45,7 @@ export function InitialPage() {
                         <NavListUl>
                             <li><Link to="whoAmI">Who am I?</Link></li>
                             <li><Link to="projects">Projects</Link></li>
-                            <li><a>Skills</a></li>
+                            <li><Link to="skills">Skills</Link></li>
                         </NavListUl>
                     </NavBarNav>
                 </GridLayoutDiv>
@@ -104,6 +105,10 @@ export function InitialPage() {
                         </ProjectsContainerDiv>
                     </GridLayoutDiv>
                 </ProjectsSection>
+
+                <SkillsSection id="skills">
+                    <h1>Skills</h1>
+                </SkillsSection>
             </Main>
         </>
     );

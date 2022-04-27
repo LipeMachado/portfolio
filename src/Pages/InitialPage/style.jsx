@@ -33,11 +33,35 @@ export const NavListUl = styled.ul`
         font-size: 1.3rem;
         
         a {
-            transition: all 0.4s;
+            transition: all ease-in-out 0.3s;
 
-            &:hover {
+            &::after {
                 color: var(--purple-light);
-                border-bottom: 1px solid var(--purple-light);
+                display: block;
+                width: 0;
+                content: "";
+                border: 2px solid transparent;
+            }
+
+            &:hover::after {
+                animation: animate 0.3s linear forwards;
+            }
+
+            @keyframes animate {
+                0% {
+                    width: 0;
+                    border-top-color: transparent;
+                }
+
+                50% {
+                    width: 50%;
+                    border-top-color: var(--purple-light);
+                }
+            
+                100% {
+                    width: 100%;
+                    border-top-color: var(--purple-light);
+                }
             }
         }
     }
@@ -135,9 +159,9 @@ export const WhoAmINameP = styled.p`
 
 export const ProjectsSection = styled.section`
     background-color: var(--background);
-    padding: 2rem 0 2rem 0;
     display: flex;
     padding: 2rem 5rem 7rem 5rem;
+    border-bottom: 1px solid var(--border-separate);
 `;
 
 export const ProjectsTitleH1 = styled.h1`
@@ -149,4 +173,16 @@ export const ProjectsContainerDiv = styled.div`
     display: grid;
     grid-template-columns: 18rem 18rem 18rem;
     grid-gap: 100px 80px;
+`;
+
+export const SkillsSection = styled.section`
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+    h1 {
+        margin-top: 50px;
+    }
+    //padding: 2rem 5rem 7rem 5rem;
 `;
