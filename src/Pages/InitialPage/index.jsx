@@ -25,6 +25,7 @@ import {
 } from './style.jsx'
 
 import { CardProjects } from '../../Components/CardProjects/'
+import { ScrollTop } from '../../Components/ScrollTop/'
 
 import homeImage from '../../Images/homeImage.svg'
 import whoIAm from '../../Images/whoIAm.svg'
@@ -60,7 +61,7 @@ export function InitialPage() {
                                     Hi, I'm
                                     <br/>
                                     <span className="homeName">
-                                        Felipe Silva.
+                                        Felipe Silva <span>.</span>
                                     </span>
                                     <br/>
                                     <span className="typeWriter">
@@ -110,6 +111,7 @@ export function InitialPage() {
                     <h1>Skills</h1>
                 </SkillsSection>
             </Main>
+            <ScrollTop />
         </>
     );
 }

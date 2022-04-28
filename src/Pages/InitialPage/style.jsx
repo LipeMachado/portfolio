@@ -35,13 +35,16 @@ export const NavListUl = styled.ul`
         a {
             transition: all ease-in-out 0.3s;
 
-            &::after {
+            &:hover {
                 color: var(--purple-light);
+            }
+
+            &::after {
                 display: block;
                 width: 0;
                 content: "";
                 border: 2px solid transparent;
-            }
+            }   
 
             &:hover::after {
                 animation: animate 0.3s linear forwards;
@@ -96,6 +99,12 @@ export const HomeContainerTextDiv = styled.div`
         .homeName {
             font-size: 3rem;
             font-weight: 600;
+
+            span {
+                font-size: 5rem;
+                font-family: none;
+                color: var(--purple-light)
+            }
         }
     }
 `;
@@ -130,7 +139,6 @@ export const ImageWhoAmIDiv = styled.div`
 
 export const ImageWhoAmIImg = styled.img`
     width: 400px;
-
     transition: all 0.8s;
 
     &:hover {
@@ -149,6 +157,7 @@ export const WhoAmINameH2 = styled.h2`
     span {
         font-size: 4rem;
         color: var(--purple-light);
+        font-family: none;
     }
 `;
 
@@ -167,6 +176,7 @@ export const ProjectsSection = styled.section`
 export const ProjectsTitleH1 = styled.h1`
     text-align: center;
     margin-bottom: 3.5rem;
+    font-size: 2rem;
 `;
 
 export const ProjectsContainerDiv = styled.div`
@@ -183,6 +193,6 @@ export const SkillsSection = styled.section`
 
     h1 {
         margin-top: 50px;
+        font-size: 2rem;
     }
-    //padding: 2rem 5rem 7rem 5rem;
 `;
