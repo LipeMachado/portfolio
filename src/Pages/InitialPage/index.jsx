@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-scroll';
+import { Suspense } from 'react';
+import { Link } from 'react-scroll';
 import {
     Header,
     NavBarNav,
@@ -21,11 +22,17 @@ import {
     ProjectsSection,
     ProjectsTitleH1,
     ProjectsContainerDiv,
-    SkillsSection
+    SkillsSection,
+    SkillsContainerDiv,
+    InfosSkillsDiv,
+    CardSkillsContainerDiv
 } from './style.jsx'
 
 import { CardProjects } from '../../Components/CardProjects/'
 import { ScrollTop } from '../../Components/ScrollTop/'
+import { CardSkills } from '../../Components/CardSkills/'
+import { AnimatedSphere } from '../../Components/AnimatedSphere/'
+import { Canvas } from '@react-three/fiber'
 
 import homeImage from '../../Images/homeImage.svg'
 import whoIAm from '../../Images/whoIAm.svg'
@@ -42,7 +49,7 @@ export function InitialPage() {
             <Header>
                 <GridLayoutDiv>
                     <NavBarNav>
-                        <h1>POWFOLIO</h1>
+                        <h1>LIPECODE</h1>
                         <NavListUl>
                             <li><Link to="whoAmI">Who am I?</Link></li>
                             <li><Link to="projects">Projects</Link></li>
@@ -70,7 +77,13 @@ export function InitialPage() {
                                 </h1>
                             </HomeContainerTextDiv>
                             <HomeContainerImageDiv>
-                                <HomeImageSvg src={homeImage}/>
+                                <Canvas>
+                                    <ambientLight intensity={0.5} />
+                                    <directionalLight position={[-2, 5, 2]} />
+                                    <Suspense fallback={null}>
+                                        <AnimatedSphere />
+                                    </Suspense>
+                                </Canvas>
                             </HomeContainerImageDiv>
                         </HomeDiv>
                     </GridLayoutDiv>
@@ -108,7 +121,17 @@ export function InitialPage() {
                 </ProjectsSection>
 
                 <SkillsSection id="skills">
-                    <h1>Skills</h1>
+                    <GridLayoutDiv>
+                        <SkillsContainerDiv style={{ display: 'flex'}}>
+                            <InfosSkillsDiv>
+                                imagem e texto sobre a skill
+                            </InfosSkillsDiv>
+                            <CardSkillsContainerDiv>
+                                <CardSkills />
+                                cards das skills
+                            </CardSkillsContainerDiv>
+                        </SkillsContainerDiv>
+                    </GridLayoutDiv>
                 </SkillsSection>
             </Main>
             <ScrollTop />

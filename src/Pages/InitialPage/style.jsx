@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+// ==================== HEADER AND NAVBAR SECTION ====================
+
 export const Header = styled.header`
     font-family: 'Alata', sans-serif;
     width: 100%;
@@ -70,6 +72,8 @@ export const NavListUl = styled.ul`
     }
 `;
 
+// ==================== MAIN SECTION ====================
+
 export const Main = styled.main`
     color: var(--white);
 `;
@@ -78,6 +82,8 @@ export const GridLayoutDiv = styled.div`
     max-width: 1140px;
     margin: 0 auto;
 `;
+
+// ==================== HOME SECTION ====================
 
 export const HomeSection = styled.section`
     background-color: var(--background);
@@ -121,6 +127,8 @@ export const HomeImageSvg = styled.img`
         transform: scale(1.05);
     }
 `;
+
+// ==================== WHO AM I SECTION ====================
 
 export const WhoAmISection = styled.section`
     background-color: var(--background-light);
@@ -166,6 +174,8 @@ export const WhoAmINameP = styled.p`
     font-weight: 300;
 `;
 
+// ==================== PROJECTS SECTION ====================
+
 export const ProjectsSection = styled.section`
     background-color: var(--background);
     display: flex;
@@ -185,14 +195,29 @@ export const ProjectsContainerDiv = styled.div`
     grid-gap: 100px 80px;
 `;
 
+// ==================== SKILLS SECTION ====================
+
 export const SkillsSection = styled.section`
-    background-color: var(--background);
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+    background-color: var(--background-light);
+    padding: 5rem 2rem 5rem 2rem;
 
     h1 {
         margin-top: 50px;
         font-size: 2rem;
     }
+`;
+
+export const SkillsContainerDiv = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78vh;
+`;
+
+export const InfosSkillsDiv = styled.div`
+    
+`;
+
+export const CardSkillsContainerDiv = styled.div`
+
 `;
