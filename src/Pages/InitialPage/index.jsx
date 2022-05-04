@@ -84,7 +84,6 @@ export function InitialPage() {
                                 </HomeTextDiv>
                             </HomeContainerTextDiv>
                             <HomeContainerImageDiv>
-                                {/*
                                 <Canvas>
                                     <ambientLight intensity={0.5} />
                                     <directionalLight position={[-2, 5, 2]} />
@@ -92,7 +91,6 @@ export function InitialPage() {
                                         <AnimatedSphere />
                                     </Suspense>
                                 </Canvas>
-                                */}
                             </HomeContainerImageDiv>
                         </HomeDiv>
                     </GridLayoutDiv>
