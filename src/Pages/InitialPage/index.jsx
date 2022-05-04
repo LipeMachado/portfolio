@@ -130,7 +130,7 @@ export function InitialPage() {
                     <GridLayoutDiv>
                         <SkillsContainerDiv>
                             <InfosSkillsArticle>
-                                <InfoSkillsH1>Conhecimentos <span>.</span></InfoSkillsH1>
+                                <InfoSkillsH1>Skills <span>.</span></InfoSkillsH1>
                                 <InfoSkillsParagraphP>Hover the mouse cursor on the card to read</InfoSkillsParagraphP>
                             </InfosSkillsArticle>
                             <CardSkillsContainerDiv>

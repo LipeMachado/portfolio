@@ -208,6 +208,10 @@ export const ProjectsSection = styled.section`
     display: flex;
     padding: 2rem 5rem 7rem 5rem;
     border-bottom: 1px solid var(--border-separate);
+
+    @media only screen and (max-width: 425px){
+        padding: 0 0 7rem 0;
+    }
 `;
 
 export const ProjectsTitleH1 = styled.h1`
@@ -243,10 +247,10 @@ export const InfosSkillsArticle = styled.article`
 `;
 
 export const InfoSkillsH1 = styled.h1`
-    font-size: 2rem;
+    font-size: 1.8rem;
     
     span {
-        font-size: 4rem;
+        font-size: 3rem;
         color: var(--purple-light);
         font-family: none;
     }
