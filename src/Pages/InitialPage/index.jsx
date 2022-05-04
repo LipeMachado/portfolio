@@ -34,7 +34,6 @@ import { CardSkills } from '../../Components/CardSkills/'
 import { AnimatedSphere } from '../../Components/AnimatedSphere/'
 import { Canvas } from '@react-three/fiber'
 
-import homeImage from '../../Images/homeImage.svg'
 import whoIAm from '../../Images/whoIAm.svg'
 import nftCard from '../../Images/nftCard.jpg'
 import orderSummary from '../../Images/orderSummary.jpg'
