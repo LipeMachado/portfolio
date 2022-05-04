@@ -140,15 +140,20 @@ export const WhoAmISection = styled.section`
     padding: 96px 48px;
 `;
 
-export const WhoAmIDiv = styled.div`
+export const WhoAmIContainerDiv = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
 `;
 
 export const ImageWhoAmIDiv = styled.div`
-    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 1200px){
+        display: none;
+    }
 `;
 
 export const ImageWhoAmIImg = styled.img`
@@ -161,8 +166,7 @@ export const ImageWhoAmIImg = styled.img`
 `;
 
 export const WhoAmITextDiv = styled.div`
-    display: block;
-    flex-wrap: wrap;
+    max-width: 500px;
 `;
 
 export const WhoAmINameH2 = styled.h2`
@@ -199,7 +203,7 @@ export const ProjectsTitleH1 = styled.h1`
 
 export const ProjectsContainerDiv = styled.div`
     display: flex;
-    gap: 100px;
+    gap: 45px;
     flex-wrap: wrap;
     justify-content: center;
 `;

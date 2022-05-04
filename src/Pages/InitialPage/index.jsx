@@ -11,9 +11,8 @@ import {
     HomeDiv,
     HomeContainerTextDiv,
     HomeContainerImageDiv,
-    HomeImageSvg,
     WhoAmISection,
-    WhoAmIDiv,
+    WhoAmIContainerDiv,
     ImageWhoAmIDiv,
     ImageWhoAmIImg,
     WhoAmITextDiv,
@@ -98,18 +97,18 @@ export function InitialPage() {
 
                 <WhoAmISection id="whoAmI">
                     <GridLayoutDiv>
-                        <WhoAmIDiv>
+                        <WhoAmIContainerDiv>
                             <ImageWhoAmIDiv>
                                 <ImageWhoAmIImg src={whoIAm}/>
                             </ImageWhoAmIDiv>
                             <WhoAmITextDiv>
-                                <WhoAmINameH2>Felipe Silva <span>.</span></WhoAmINameH2>
+                                <WhoAmINameH2>Who I am <span>.</span></WhoAmINameH2>
                                 <WhoAmINameP>
                                     Hi, my name is Felipe Silva. I'm a frontend developer.
                                     I develop responsive and minimalist websites.
                                 </WhoAmINameP>
                             </WhoAmITextDiv>
-                        </WhoAmIDiv>
+                        </WhoAmIContainerDiv>
                     </GridLayoutDiv>
                 </WhoAmISection>
 
