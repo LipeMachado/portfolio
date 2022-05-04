@@ -21,6 +21,10 @@ export const NavBarNav = styled.nav`
         letter-spacing: 6px;
         cursor: default;
     }
+
+    @media only screen and (max-width: 992px){
+        padding: 0 2rem;
+    }
 `;
 
 export const NavListUl = styled.ul`
@@ -99,6 +103,12 @@ export const HomeDiv = styled.div`
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media only screen and (max-width: 992px){
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 `;
 
 export const HomeContainerTextDiv = styled.div`
@@ -119,10 +129,16 @@ export const HomeContainerTextDiv = styled.div`
             }
         }
     }
+
+    @media only screen and (max-width: 992px){
+        width: 100%;
+    }
 `;
 
 export const HomeContainerImageDiv = styled.div`
-    
+    @media only screen and (max-width: 992px){
+        display: none;
+    }
 `;
 
 export const HomeImageSvg = styled.img`
