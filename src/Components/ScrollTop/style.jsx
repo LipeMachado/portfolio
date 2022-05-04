@@ -4,8 +4,8 @@ export const ScrollTopContainerDiv = styled.div`
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    bottom: 1rem;
+    right: 1rem;
 `;
 
 export const ScrollTopDiv = styled.div`

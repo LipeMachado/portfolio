@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // ==================== HEADER AND NAVBAR SECTION ====================
 
 export const Header = styled.header`
-    font-family: 'Alata', sans-serif;
+    font-family: var(--font-alata);
     width: 100%;
     background-color: var(--background);
     color: var(--white);
@@ -28,7 +28,7 @@ export const NavBarNav = styled.nav`
 `;
 
 export const NavListUl = styled.ul`
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--font-ibm-plex-sans);
     display: flex;
     color: var(--gray);
     list-style: none;
@@ -87,7 +87,7 @@ export const Main = styled.main`
 `;
 
 export const GridLayoutDiv = styled.div`
-    max-width: 1140px;
+    max-width: 1180px;
     margin: 0 auto;
 `;
 
@@ -114,24 +114,23 @@ export const HomeDiv = styled.div`
 export const HomeContainerTextDiv = styled.div`
     width: 50%;
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 400;
-
-        .homeName {
-            font-size: 3rem;
-            font-weight: 600;
-
-            span {
-                font-size: 5rem;
-                font-family: none;
-                color: var(--purple-light)
-            }
-        }
-    }
-
     @media only screen and (max-width: 992px){
         width: 100%;
+    }
+`;
+
+export const HomeTextDiv = styled.div`
+    font-size: 2rem;
+    font-weight: 400;
+`;
+
+export const HomeTextNameH1 = styled.h1`
+    font-family: var(--font-ibm-plex-sans);
+
+    span {
+        font-size: 3rem;
+        color: var(--purple-light);
+        font-family: none;
     }
 `;
 
@@ -159,7 +158,7 @@ export const WhoAmISection = styled.section`
 export const WhoAmIContainerDiv = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 `;
 
@@ -190,7 +189,7 @@ export const WhoAmINameH2 = styled.h2`
     margin-bottom: 1rem;
 
     span {
-        font-size: 4rem;
+        font-size: 3rem;
         color: var(--purple-light);
         font-family: none;
     }
@@ -219,6 +218,12 @@ export const ProjectsTitleH1 = styled.h1`
     margin-bottom: 3.5rem;
     margin-top: 3.5rem;
     font-size: 2rem;
+
+    span {
+        font-size: 3rem;
+        color: var(--purple-light);
+        font-family: none;
+    }
 `;
 
 export const ProjectsContainerDiv = styled.div`
@@ -240,14 +245,22 @@ export const SkillsContainerDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    height: auto;
+    padding: 8px;
 `;
 
 export const InfosSkillsArticle = styled.article`
     min-height: 300px;
+    width: 30%;
+
+    @media only screen and (max-width: 1200px) {
+        width: 100%;
+    }
 `;
 
 export const InfoSkillsH1 = styled.h1`
-    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-size: 2rem;
     
     span {
         font-size: 3rem;
@@ -260,13 +273,17 @@ export const InfoSkillsParagraphP = styled.p.attrs(() => ({
     className: 'changeInfos'
 }))`
     max-width: 500px;
-    margin-top: 20px;
+    line-height: 2rem;
     font-size: 1.2rem;
 `;
 
 export const CardSkillsContainerDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    gap: 24px;
+
+    @media only screen and (max-width: 1200px) {
+        width: 100%;
+        margin-top: 48px;
+    }
 `;

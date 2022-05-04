@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-    CardSkillsDiv
+    CardSkillsArticle
 } from './style.jsx';
 
     function hoverChangeInformations() {
@@ -9,10 +9,9 @@ import {
 
 export function CardSkills(props) {
     return (
-        <CardSkillsDiv className={props.className}>
-            <div>
-                <img src={props.src}/>
-            </div>
-        </CardSkillsDiv>
+        <CardSkillsArticle className={props.className}>
+            <span></span>
+            <img src={props.src} />
+        </CardSkillsArticle>
     );
 }

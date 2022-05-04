@@ -1,29 +1,33 @@
 import styled from 'styled-components';
 
-export const CardSkillsDiv = styled.div`
-    width: 6rem;
-    height: 6rem;
-    border: 2px solid transparent;
+export const CardSkillsArticle = styled.article`
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    flex-grow: 1;
+    height: 100px;
     background-color: var(--background);
-    border-radius: 5px;
-    transition: all 0.6s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1.5s cubic-bezier(0.5, 0, 0, 1) 0s;
+    position: relative;
+    border: 2px solid transparent;
+    transition: 1s all ease;
+    
 
     &:hover {
         cursor: default;
         border: 2px solid var(--purple-light);
     }
 
-    div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    img {
+        width: 60px;
         border-radius: 5px;
+        height: auto;
+        display: block;
+    }
 
-        img {
-            width: 50px;
-            border-radius: 5px;
-        }
+    @media only screen and (max-width: 768px){
+        width: 40%;
+        margin: 20px 0px;
     }
 `;
