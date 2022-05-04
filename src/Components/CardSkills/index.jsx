@@ -3,10 +3,16 @@ import {
     CardSkillsDiv
 } from './style.jsx';
 
-export function CardSkills() {
+    function hoverChangeInformations() {
+        let changeInfos = document.querySelector(".changeInfos")    
+    }
+
+export function CardSkills(props) {
     return (
-        <CardSkillsDiv>
-            <div></div>
+        <CardSkillsDiv className={props.className}>
+            <div>
+                <img src={props.src}/>
+            </div>
         </CardSkillsDiv>
     );
 }

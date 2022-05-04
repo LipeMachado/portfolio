@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         --scroll-background: #6610f2;
         --white: #ffffff;
         --purple-light: #894ee7;
+        --purple: #8352FD;
         --gray: #cccccc;
         --border-separate: rgba(114, 114, 126, 0.2);
     }

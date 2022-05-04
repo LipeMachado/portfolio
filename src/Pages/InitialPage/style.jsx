@@ -199,25 +199,40 @@ export const ProjectsContainerDiv = styled.div`
 
 export const SkillsSection = styled.section`
     background-color: var(--background-light);
-    padding: 5rem 2rem 5rem 2rem;
-
-    h1 {
-        margin-top: 50px;
-        font-size: 2rem;
-    }
+    padding: 96px 48px;
 `;
 
 export const SkillsContainerDiv = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 78vh;
+    flex-wrap: wrap;
 `;
 
-export const InfosSkillsDiv = styled.div`
+export const InfosSkillsArticle = styled.article`
+    min-height: 300px;
+`;
+
+export const InfoSkillsH1 = styled.h1`
+    font-size: 2rem;
     
+    span {
+        font-size: 4rem;
+        color: var(--purple-light);
+        font-family: none;
+    }
+`;
+
+export const InfoSkillsParagraphP = styled.p.attrs(() => ({
+    className: 'changeInfos'
+}))`
+    max-width: 500px;
+    margin-top: 20px;
+    font-size: 1.2rem;
 `;
 
 export const CardSkillsContainerDiv = styled.div`
-
+    display: grid;
+    grid-template-columns: 7rem 7rem 7rem 7rem 7rem;
+    grid-gap: 10px 0px;
 `;

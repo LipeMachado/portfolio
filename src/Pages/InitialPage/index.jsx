@@ -24,8 +24,10 @@ import {
     ProjectsContainerDiv,
     SkillsSection,
     SkillsContainerDiv,
-    InfosSkillsDiv,
-    CardSkillsContainerDiv
+    InfosSkillsArticle,
+    CardSkillsContainerDiv,
+    InfoSkillsH1,
+    InfoSkillsParagraphP
 } from './style.jsx'
 
 import { CardProjects } from '../../Components/CardProjects/'
@@ -41,6 +43,12 @@ import profileCard from '../../Images/profileCard.jpg'
 import qrCode from '../../Images/qrCode.jpg'
 import statsPreview from '../../Images/statsPreview.jpg'
 import codarWebsite from '../../Images/codarWebsite.jpeg'
+import logoCss from '../../Images/iconsSkills/logoCSS.svg'
+import logoHtml from '../../Images/iconsSkills/logoHTML.svg'
+import logoJavaScript from '../../Images/iconsSkills/logoJavaScript.svg'
+import logoReactJs from '../../Images/iconsSkills/logoReactJS.svg'
+import logoPython from '../../Images/iconsSkills/logoPython.svg'
+
 
 export function InitialPage() {
     return (
@@ -121,13 +129,17 @@ export function InitialPage() {
 
                 <SkillsSection id="skills">
                     <GridLayoutDiv>
-                        <SkillsContainerDiv style={{ display: 'flex'}}>
-                            <InfosSkillsDiv>
-                                imagem e texto sobre a skill
-                            </InfosSkillsDiv>
+                        <SkillsContainerDiv>
+                            <InfosSkillsArticle>
+                                <InfoSkillsH1>Conhecimentos <span>.</span></InfoSkillsH1>
+                                <InfoSkillsParagraphP>Hover the mouse cursor on the card to read</InfoSkillsParagraphP>
+                            </InfosSkillsArticle>
                             <CardSkillsContainerDiv>
-                                <CardSkills />
-                                cards das skills
+                                <CardSkills src={logoHtml} className={"html"}/>
+                                <CardSkills src={logoCss} className={"css"}/>
+                                <CardSkills src={logoJavaScript} className={"js"}/>
+                                <CardSkills src={logoReactJs} className={"reactjs"}/>
+                                <CardSkills src={logoPython} className={"python"}/>
                             </CardSkillsContainerDiv>
                         </SkillsContainerDiv>
                     </GridLayoutDiv>
