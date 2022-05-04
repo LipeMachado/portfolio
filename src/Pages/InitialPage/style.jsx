@@ -70,6 +70,10 @@ export const NavListUl = styled.ul`
             }
         }
     }
+
+    @media only screen and (max-width: 992px) {
+        display: none;
+    }
 `;
 
 // ==================== MAIN SECTION ====================
@@ -93,10 +97,12 @@ export const HomeDiv = styled.div`
     height: 80vh;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `;
 
 export const HomeContainerTextDiv = styled.div`
-    width: 100%;
+    width: 50%;
 
     h1 {
         font-size: 2rem;
@@ -116,11 +122,10 @@ export const HomeContainerTextDiv = styled.div`
 `;
 
 export const HomeContainerImageDiv = styled.div`
-    width: 65%;
+    
 `;
 
 export const HomeImageSvg = styled.img`
-    width: 100%;
     transition: all 0.8s;
 
     &:hover {
@@ -138,11 +143,12 @@ export const WhoAmISection = styled.section`
 export const WhoAmIDiv = styled.div`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `;
 
 export const ImageWhoAmIDiv = styled.div`
     width: 50%;
-    padding-right: 100px;
 `;
 
 export const ImageWhoAmIImg = styled.img`
@@ -155,7 +161,8 @@ export const ImageWhoAmIImg = styled.img`
 `;
 
 export const WhoAmITextDiv = styled.div`
-
+    display: block;
+    flex-wrap: wrap;
 `;
 
 export const WhoAmINameH2 = styled.h2`
@@ -186,13 +193,15 @@ export const ProjectsSection = styled.section`
 export const ProjectsTitleH1 = styled.h1`
     text-align: center;
     margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
     font-size: 2rem;
 `;
 
 export const ProjectsContainerDiv = styled.div`
-    display: grid;
-    grid-template-columns: 18rem 18rem 18rem;
-    grid-gap: 100px 80px;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
 `;
 
 // ==================== SKILLS SECTION ====================
@@ -232,7 +241,8 @@ export const InfoSkillsParagraphP = styled.p.attrs(() => ({
 `;
 
 export const CardSkillsContainerDiv = styled.div`
-    display: grid;
-    grid-template-columns: 7rem 7rem 7rem 7rem 7rem;
-    grid-gap: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 `;
