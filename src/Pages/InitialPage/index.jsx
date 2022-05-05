@@ -50,7 +50,7 @@ import logoJavaScript from '../../Assets/iconsSkills/logoJavaScript.svg'
 import logoReactJs from '../../Assets/iconsSkills/logoReactJS.svg'
 import logoPython from '../../Assets/iconsSkills/logoPython.svg'
 import logoLess from '../../Assets/iconsSkills/logoLess.svg'
-import logoStyledComponets from '../../Assets/iconsSkills/logoStyledComponets.svg'
+import logoStyledComponents from '../../Assets/iconsSkills/logoStyledComponents.svg'
 import logoVueJs from '../../Assets/iconsSkills/logoVueJs.svg'
 
 export function InitialPage() {
@@ -59,7 +59,7 @@ export function InitialPage() {
             <Header>
                 <GridLayoutDiv>
                     <NavBarNav>
-                        <h1>LIPECODE</h1>
+                        <h1 id="teste">LIPECODE</h1>
                         <NavListUl>
                             <li><Link to="whoAmI">Who am I?</Link></li>
                             <li><Link to="projects">Projects</Link></li>
@@ -84,6 +84,7 @@ export function InitialPage() {
                                 </HomeTextDiv>
                             </HomeContainerTextDiv>
                             <HomeContainerImageDiv>
+                                {/*
                                 <Canvas>
                                     <ambientLight intensity={0.5} />
                                     <directionalLight position={[-2, 5, 2]} />
@@ -91,6 +92,7 @@ export function InitialPage() {
                                         <AnimatedSphere />
                                     </Suspense>
                                 </Canvas>
+                                */}
                             </HomeContainerImageDiv>
                         </HomeDiv>
                     </GridLayoutDiv>
@@ -141,7 +143,7 @@ export function InitialPage() {
                                 <CardSkills src={logoReactJs} className={"reactjs"}/>
                                 <CardSkills src={logoVueJs} className={"vue"} />
                                 <CardSkills src={logoLess} className={"less"} />
-                                <CardSkills src={logoStyledComponets} className={"styledComponets"} />
+                                <CardSkills src={logoStyledComponents} className={"styledComponents"} />
                                 <CardSkills src={logoPython} className={"python"} />
                             </CardSkillsContainerDiv>
                         </SkillsContainerDiv>
