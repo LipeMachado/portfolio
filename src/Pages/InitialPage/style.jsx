@@ -267,7 +267,7 @@ export const SkillsContainerDiv = styled.div`
 
 export const InfosSkillsArticle = styled.article`
     min-height: 300px;
-    width: 30%;
+    width: 35%;
 
     @media only screen and (max-width: 1200px) {
         width: 100%;
