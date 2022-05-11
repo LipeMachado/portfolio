@@ -1,10 +1,12 @@
 import React from 'react';
 import { Suspense } from 'react';
 import { Link } from 'react-scroll';
+import { List } from 'phosphor-react';
 import {
     Header,
     NavBarNav,
     NavListUl,
+    ListMenuIconContainerDiv,
     Main,
     HomeSection,
     GridLayoutDiv,
@@ -65,6 +67,9 @@ export function InitialPage() {
                             <li><Link to="projects">Projects</Link></li>
                             <li><Link to="skills">Skills</Link></li>
                         </NavListUl>
+                        <ListMenuIconContainerDiv>
+                            <List size={32} />
+                        </ListMenuIconContainerDiv>
                     </NavBarNav>
                 </GridLayoutDiv>
             </Header>
