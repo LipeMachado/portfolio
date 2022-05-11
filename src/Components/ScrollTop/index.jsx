@@ -11,7 +11,7 @@ export function ScrollTop() {
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
+            if (window.scrollY > 250) {
                 setToTopButton(true)
             } else {
                 setToTopButton(false)
