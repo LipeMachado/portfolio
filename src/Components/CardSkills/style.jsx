@@ -10,7 +10,7 @@ export const CardSkillsArticle = styled.article`
     height: 100px;
     background-color: var(--background);
     position: relative;
-    border: 2px solid transparent;
+    border: 2px solid var(--border-separate);
     transition: 1s all ease;
     
 
