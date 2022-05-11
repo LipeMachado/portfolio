@@ -209,11 +209,19 @@ export const WhoAmINameH2 = styled.h2`
         color: var(--purple-light);
         font-family: none;
     }
+
+    @media only screen and (max-width: 1200px){
+        text-align: center;
+    }
 `;
 
 export const WhoAmINameP = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
+
+    @media only screen and (max-width: 1200px){
+        text-align: center;
+    }
 `;
 
 // ==================== PROJECTS SECTION ====================
