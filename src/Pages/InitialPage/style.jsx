@@ -150,7 +150,9 @@ export const HomeTextNameH1 = styled.h1`
     }
 `;
 
-export const HomeContainerImageDiv = styled.div`
+export const HomeContainerImageDiv = styled.div.attrs(() => ({
+    className: 'animatedImage'
+}))`
     @media only screen and (max-width: 992px){
         display: none;
     }

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Suspense } from 'react';
+import React, { useEffect, useRef } from 'react';
+import lottie from 'lottie-web';
 import { Link } from 'react-scroll';
 import { List } from 'phosphor-react';
+
 import {
     Header,
     NavBarNav,
@@ -36,8 +37,6 @@ import {
 import { CardProjects } from '../../Components/CardProjects/'
 import { ScrollTop } from '../../Components/ScrollTop/'
 import { CardSkills } from '../../Components/CardSkills/'
-import { AnimatedSphere } from '../../Components/AnimatedSphere/'
-import { Canvas } from '@react-three/fiber'
 
 import whoIAm from '../../Assets/whoIAm.svg'
 import nftCard from '../../Assets/nftCard.jpg'
@@ -56,6 +55,19 @@ import logoStyledComponents from '../../Assets/iconsSkills/logoStyledComponents.
 import logoVueJs from '../../Assets/iconsSkills/logoVueJs.svg'
 
 export function InitialPage() {
+
+    // const animatedImage = useRef(null)
+
+    // useEffect(() => {
+    //     lottie.loadAnimation({
+    //         animatedImage: animatedImage.current,
+    //         renderer: 'svg',
+    //         loop: true,
+    //         autoplay: true,
+    //         animationData: require('../../Assets/animatedImages/developer.json')
+    //     })
+    // }, [])
+
     return (
         <>
             <Header>
@@ -88,16 +100,8 @@ export function InitialPage() {
                                     Front-end developer
                                 </HomeTextDiv>
                             </HomeContainerTextDiv>
-                            <HomeContainerImageDiv>
-                                {/*
-                                <Canvas>
-                                    <ambientLight intensity={0.5} />
-                                    <directionalLight position={[-2, 5, 2]} />
-                                    <Suspense fallback={null}>
-                                        <AnimatedSphere />
-                                    </Suspense>
-                                </Canvas>
-                                */}
+                            <HomeContainerImageDiv /*ref={animatedImage}*/>
+                                UMA IMAGEM LEGAL VAI AQUI
                             </HomeContainerImageDiv>
                         </HomeDiv>
                     </GridLayoutDiv>
