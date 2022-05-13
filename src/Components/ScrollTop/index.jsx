@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import {
     ScrollTopContainerDiv,
     ScrollTopDiv,
@@ -17,6 +19,10 @@ export function ScrollTop() {
                 setToTopButton(false)
             }
         })
+
+        Aos.init({
+            duration: 1200,
+        });
     }, [])
 
     const scrollUp = () => {
@@ -29,7 +35,7 @@ export function ScrollTop() {
     return (
         <>
             {toTopButton && (
-                <ScrollTopContainerDiv onClick={scrollUp}>
+                <ScrollTopContainerDiv onClick={scrollUp} data-aos="fade-left">
                     <ScrollTopDiv>
                         <TrianguloDiv />
                     </ScrollTopDiv>

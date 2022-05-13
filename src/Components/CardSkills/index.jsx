@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { 
     CardSkillsArticle
 } from './style.jsx';
@@ -20,10 +22,14 @@ function hoverChangeInformations(classCardName, textInfoCard) {
 export function CardSkills(props) {
     useEffect(() => {
         hoverChangeInformations(`.${props.className}`, listTexts[props.className])
+
+        Aos.init({
+            duration: 1500
+        });
     }, []);
 
     return (
-        <CardSkillsArticle className={props.className} >
+        <CardSkillsArticle className={props.className} data-aos="zoom-in" >
             <span></span>
             <img src={props.src} />
         </CardSkillsArticle>

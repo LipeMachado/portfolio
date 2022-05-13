@@ -1,5 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import lottie from 'lottie-web';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import Lottie from 'react-lottie';
 import { Link } from 'react-scroll';
 import { List } from 'phosphor-react';
 
@@ -54,26 +56,40 @@ import logoLess from '../../Assets/iconsSkills/logoLess.svg'
 import logoStyledComponents from '../../Assets/iconsSkills/logoStyledComponents.svg'
 import logoVueJs from '../../Assets/iconsSkills/logoVueJs.svg'
 
+import developerAnimated from '../../Assets/animatedImages/develper.json'
+import whoIAmAnimated from '../../Assets/animatedImages/whoiam.json'
+
 export function InitialPage() {
+    useEffect(() => {
+        Aos.init({
+            duration: 1200,
+        });
+    }, [])
 
-    // const animatedImage = useRef(null)
+    const optionAnimatedHome = {
+        loop: true,
+        autoplay: true,
+        animationData: developerAnimated,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+        },
+    };
 
-    // useEffect(() => {
-    //     lottie.loadAnimation({
-    //         animatedImage: animatedImage.current,
-    //         renderer: 'svg',
-    //         loop: true,
-    //         autoplay: true,
-    //         animationData: require('../../Assets/animatedImages/developer.json')
-    //     })
-    // }, [])
+    const optionAnimatedWhoIAm = {
+        loop: true,
+        autoplay: true,
+        animationData: whoIAmAnimated,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+        },
+    };
 
     return (
         <>
             <Header>
                 <GridLayoutDiv>
                     <NavBarNav>
-                        <h1 id="teste">LIPECODE</h1>
+                        <h1 id="teste" data-aos="zoom-in">POWFOLIO</h1>
                         <NavListUl>
                             <li><Link to="whoAmI">Who am I?</Link></li>
                             <li><Link to="projects">Projects</Link></li>
@@ -94,14 +110,14 @@ export function InitialPage() {
                                 <HomeTextDiv>
                                     Hi, I'm
                                     <br/>
-                                    <HomeTextNameH1>
-                                        Felipe Silva <span>.</span>
+                                    <HomeTextNameH1 data-aos="fade-right">
+                                        Felipe Silva <span data-aos="fade" data-aos-delay="1000">.</span>
                                     </HomeTextNameH1>
                                     Front-end developer
                                 </HomeTextDiv>
                             </HomeContainerTextDiv>
-                            <HomeContainerImageDiv /*ref={animatedImage}*/>
-                                UMA IMAGEM LEGAL VAI AQUI
+                            <HomeContainerImageDiv>
+                                <Lottie options={optionAnimatedHome} width={ 500 } height={ 500 } data-aos="zoom-in"/>
                             </HomeContainerImageDiv>
                         </HomeDiv>
                     </GridLayoutDiv>
@@ -111,7 +127,7 @@ export function InitialPage() {
                     <GridLayoutDiv>
                         <WhoAmIContainerDiv>
                             <ImageWhoAmIDiv>
-                                <ImageWhoAmIImg src={whoIAm}/>
+                                <Lottie options={optionAnimatedWhoIAm} width={ 400 } height={ 400 } data-aos="zoom-in"/>
                             </ImageWhoAmIDiv>
                             <WhoAmITextDiv>
                                 <WhoAmINameH2>Who I am <span>.</span></WhoAmINameH2>
@@ -126,14 +142,14 @@ export function InitialPage() {
 
                 <ProjectsSection id="projects">
                     <GridLayoutDiv>
-                        <ProjectsTitleH1>Projects <span>.</span></ProjectsTitleH1>
+                        <ProjectsTitleH1>Projects</ProjectsTitleH1>
                         <ProjectsContainerDiv>
-                            <CardProjects src={nftCard} href={"https://github.com/LipeMachado/nftCard-Challenge"}/>
-                            <CardProjects src={orderSummary} href={"https://github.com/LipeMachado/orderSummary-Challenge"} />
-                            <CardProjects src={profileCard} href={"https://github.com/LipeMachado/profileCard-Challenge"} />
-                            <CardProjects src={qrCode} href={"https://github.com/LipeMachado/qrCode-Challenge"} />
-                            <CardProjects src={statsPreview} href={"https://github.com/LipeMachado/statsPreview-Challenge"} />
-                            <CardProjects src={codarWebsite} href={"https://github.com/LipeMachado/codar-Challenge"} />
+                                <CardProjects src={nftCard} href={"https://github.com/LipeMachado/nftCard-Challenge"}/>
+                                <CardProjects src={orderSummary} href={"https://github.com/LipeMachado/orderSummary-Challenge"} />
+                                <CardProjects src={profileCard} href={"https://github.com/LipeMachado/profileCard-Challenge"} />
+                                <CardProjects src={qrCode} href={"https://github.com/LipeMachado/qrCode-Challenge"} />
+                                <CardProjects src={statsPreview} href={"https://github.com/LipeMachado/statsPreview-Challenge"} />
+                                <CardProjects src={codarWebsite} href={"https://github.com/LipeMachado/codar-Challenge"} />
                         </ProjectsContainerDiv>
                     </GridLayoutDiv>
                 </ProjectsSection>
@@ -142,7 +158,7 @@ export function InitialPage() {
                     <GridLayoutDiv>
                         <SkillsContainerDiv>
                             <InfosSkillsArticle>
-                                <InfoSkillsH1>Skills <span>.</span></InfoSkillsH1>
+                                <InfoSkillsH1>Skills</InfoSkillsH1>
                                 <InfoSkillsParagraphP>Hover the mouse cursor on the card to read</InfoSkillsParagraphP>
                             </InfosSkillsArticle>
                             <CardSkillsContainerDiv>

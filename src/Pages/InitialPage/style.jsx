@@ -244,12 +244,6 @@ export const ProjectsTitleH1 = styled.h1`
     margin-bottom: 3.5rem;
     margin-top: 3.5rem;
     font-size: 2rem;
-
-    span {
-        font-size: 3rem;
-        color: var(--purple-light);
-        font-family: none;
-    }
 `;
 
 export const ProjectsContainerDiv = styled.div`
@@ -287,12 +281,6 @@ export const InfosSkillsArticle = styled.article`
 export const InfoSkillsH1 = styled.h1`
     margin-bottom: 10px;
     font-size: 2rem;
-    
-    span {
-        font-size: 3rem;
-        color: var(--purple-light);
-        font-family: none;
-    }
 `;
 
 export const InfoSkillsParagraphP = styled.p.attrs(() => ({
