@@ -33,7 +33,11 @@ import {
     InfosSkillsArticle,
     CardSkillsContainerDiv,
     InfoSkillsH1,
-    InfoSkillsParagraphP
+    InfoSkillsParagraphP,
+    ContactContainerFooter,
+    ContactContainerDiv,
+    ImageContactDiv,
+    ContactTextDiv
 } from './style.jsx'
 
 import { CardProjects } from '../../Components/CardProjects/'
@@ -55,9 +59,11 @@ import logoPython from '../../Assets/iconsSkills/logoPython.svg'
 import logoLess from '../../Assets/iconsSkills/logoLess.svg'
 import logoStyledComponents from '../../Assets/iconsSkills/logoStyledComponents.svg'
 import logoVueJs from '../../Assets/iconsSkills/logoVueJs.svg'
+import logoGitHub from '../../Assets/iconsContact/logoGitHub.svg'
 
 import developerAnimated from '../../Assets/animatedImages/develper.json'
 import whoIAmAnimated from '../../Assets/animatedImages/whoiam.json'
+import contactAnimated from '../../Assets/animatedImages/contact.json'
 
 export function InitialPage() {
     useEffect(() => {
@@ -79,6 +85,15 @@ export function InitialPage() {
         loop: true,
         autoplay: true,
         animationData: whoIAmAnimated,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+        },
+    };
+
+    const optionAnimatedContact = {
+        loop: true,
+        autoplay: true,
+        animationData: contactAnimated,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice',
         },
@@ -174,6 +189,22 @@ export function InitialPage() {
                         </SkillsContainerDiv>
                     </GridLayoutDiv>
                 </SkillsSection>
+
+                <ContactContainerFooter>
+                    <GridLayoutDiv>
+                        <ContactContainerDiv>
+                            <ContactTextDiv>
+
+                                <img src={logoGitHub} />
+                                Link de contato e tals...
+
+                            </ContactTextDiv>
+                            <ImageContactDiv>
+                                <Lottie options={optionAnimatedContact} width={ 250 } height={ 250 } data-aos="zoom-in"/>
+                            </ImageContactDiv>
+                        </ContactContainerDiv>
+                    </GridLayoutDiv>
+                </ContactContainerFooter>
             </Main>
             <ScrollTop />
         </>

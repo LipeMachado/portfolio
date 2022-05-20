@@ -301,3 +301,35 @@ export const CardSkillsContainerDiv = styled.div`
         margin-top: 48px;
     }
 `;
+
+// =================== CONTACT SECTION ====================
+
+export const ContactContainerFooter = styled.footer`
+    font-family: var(--font-alata);
+    width: 100%;
+    background-color: var(--background-light);
+    color: var(--white);
+    border-top: 1px solid var(--border-separate);
+`;
+
+export const ContactContainerDiv = styled.div`
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+`;
+
+export const ImageContactDiv = styled.div`
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 1200px){
+        display: none;
+    }
+`;
+
+export const ContactTextDiv = styled.div`
+    
+`;
