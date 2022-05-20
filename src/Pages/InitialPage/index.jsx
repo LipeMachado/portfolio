@@ -200,7 +200,7 @@ export function InitialPage() {
 
                             </ContactTextDiv>
                             <ImageContactDiv>
-                                <Lottie options={optionAnimatedContact} width={ 250 } height={ 250 } data-aos="zoom-in"/>
+                                <Lottie options={optionAnimatedContact} width={ 198 } height={ 198 } data-aos="zoom-in"/>
                             </ImageContactDiv>
                         </ContactContainerDiv>
                     </GridLayoutDiv>
