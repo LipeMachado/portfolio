@@ -189,15 +189,6 @@ export const ImageWhoAmIDiv = styled.div`
     }
 `;
 
-export const ImageWhoAmIImg = styled.img`
-    width: 400px;
-    transition: all 0.8s;
-
-    &:hover {
-        transform: scale(1.05);
-    }
-`;
-
 export const WhoAmITextDiv = styled.div`
     max-width: 500px;
 `;
@@ -331,5 +322,6 @@ export const ImageContactDiv = styled.div`
 `;
 
 export const ContactTextDiv = styled.div`
-    
+    display: flex;
+    align-items: center;
 `;

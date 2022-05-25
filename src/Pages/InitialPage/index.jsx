@@ -21,7 +21,6 @@ import {
     WhoAmISection,
     WhoAmIContainerDiv,
     ImageWhoAmIDiv,
-    ImageWhoAmIImg,
     WhoAmITextDiv,
     WhoAmINameH2,
     WhoAmINameP,
@@ -44,7 +43,6 @@ import { CardProjects } from '../../Components/CardProjects/'
 import { ScrollTop } from '../../Components/ScrollTop/'
 import { CardSkills } from '../../Components/CardSkills/'
 
-import whoIAm from '../../Assets/whoIAm.svg'
 import nftCard from '../../Assets/nftCard.jpg'
 import orderSummary from '../../Assets/orderSummary.jpg'
 import profileCard from '../../Assets/profileCard.jpg'

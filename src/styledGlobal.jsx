@@ -35,10 +35,11 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #0e091b;
         --background-black: #060509;
-        --background-light: #181327;
+        --background-light: #130f1f;
         --scroll-background: #6610f2;
         --white: #ffffff;
         --purple-light: #894ee7;
+        --blue: #2d7cd7;
         --purple: #8352FD;
         --gray: #cccccc;
         --border-separate: rgba(114, 114, 126, 0.2);
