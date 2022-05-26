@@ -12,8 +12,6 @@ import logoGitHub from '../../Assets/iconsContact/logoGitHub.svg'
 import logoLinkedIn from '../../Assets/iconsContact/logoLinkedIn.svg'
 import logoInstagram from '../../Assets/iconsContact/logoInstagram.svg'
 
-import contactAnimated from '../../Assets/animatedImages/contact.json'
-
 export function Footer() {
 
     const scrollUp = () => {
