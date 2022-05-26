@@ -31,9 +31,9 @@ export function Footer() {
                 </ContactLogosUl>
                 <ContactIndexsUl>
                     <ContactIndexsDiv>
-                        <li><Link to="home" onClick={scrollUp}>Home</Link></li>
-                        <li><Link to="whoAmI">Who am I?</Link></li>
-                        <li><Link to="projects">Projects</Link></li>
+                        <li><Link to="home" onClick={scrollUp}>Home <span>|</span></Link></li>
+                        <li><Link to="whoAmI">Who am I? <span>|</span></Link></li>
+                        <li><Link to="projects">Projects <span>|</span></Link></li>
                         <li><Link to="skills">Skills</Link></li>
                     </ContactIndexsDiv>
                 </ContactIndexsUl>

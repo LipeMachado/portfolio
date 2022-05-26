@@ -22,7 +22,7 @@ export const ContactLogosUl = styled.ul`
 
     li {
         padding: 10px;
-        margin: 5px;
+        margin: 10px;
         border: 2px solid var(--border-separate);
         transition: all 0.5s ease-in-out;
         cursor: pointer;
@@ -45,6 +45,12 @@ export const ContactIndexsDiv = styled.div`
 
     @media only screen and (max-width: 425px){
         display: block;
+    }
+
+    span {
+        @media only screen and (max-width: 425px){
+            display: none;
+        }
     }
 
     li {
