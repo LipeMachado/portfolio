@@ -6,7 +6,7 @@ export const ProjectsDiv = styled.div`
     border: 2px solid var(--border-separate);
     cursor: pointer;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
 
     &:hover {
         color: var(--purple-light);

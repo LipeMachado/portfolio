@@ -33,15 +33,13 @@ import {
     CardSkillsContainerDiv,
     InfoSkillsH1,
     InfoSkillsParagraphP,
-    ContactContainerFooter,
-    ContactContainerDiv,
-    ImageContactDiv,
-    ContactTextDiv
+    ContactContainerFooter
 } from './style.jsx'
 
 import { CardProjects } from '../../Components/CardProjects/'
 import { ScrollTop } from '../../Components/ScrollTop/'
 import { CardSkills } from '../../Components/CardSkills/'
+import { Footer } from '../../Sections/Footer/'
 
 import nftCard from '../../Assets/nftCard.jpg'
 import orderSummary from '../../Assets/orderSummary.jpg'
@@ -57,11 +55,10 @@ import logoPython from '../../Assets/iconsSkills/logoPython.svg'
 import logoLess from '../../Assets/iconsSkills/logoLess.svg'
 import logoStyledComponents from '../../Assets/iconsSkills/logoStyledComponents.svg'
 import logoVueJs from '../../Assets/iconsSkills/logoVueJs.svg'
-import logoGitHub from '../../Assets/iconsContact/logoGitHub.svg'
 
 import developerAnimated from '../../Assets/animatedImages/develper.json'
 import whoIAmAnimated from '../../Assets/animatedImages/whoiam.json'
-import contactAnimated from '../../Assets/animatedImages/contact.json'
+
 
 export function InitialPage() {
     useEffect(() => {
@@ -88,14 +85,7 @@ export function InitialPage() {
         },
     };
 
-    const optionAnimatedContact = {
-        loop: true,
-        autoplay: true,
-        animationData: contactAnimated,
-        rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice',
-        },
-    };
+    
 
     return (
         <>
@@ -107,6 +97,7 @@ export function InitialPage() {
                             <li><Link to="whoAmI">Who am I?</Link></li>
                             <li><Link to="projects">Projects</Link></li>
                             <li><Link to="skills">Skills</Link></li>
+                            <li><Link to="contact">Contact</Link></li>
                         </NavListUl>
                         <ListMenuIconContainerDiv>
                             <List size={32} />
@@ -136,7 +127,7 @@ export function InitialPage() {
                     </GridLayoutDiv>
                 </HomeSection>
 
-                <WhoAmISection id="whoAmI">
+                <WhoAmISection>
                     <GridLayoutDiv>
                         <WhoAmIContainerDiv>
                             <ImageWhoAmIDiv>
@@ -153,7 +144,7 @@ export function InitialPage() {
                     </GridLayoutDiv>
                 </WhoAmISection>
 
-                <ProjectsSection id="projects">
+                <ProjectsSection>
                     <GridLayoutDiv>
                         <ProjectsTitleH1>Projects</ProjectsTitleH1>
                         <ProjectsContainerDiv>
@@ -167,7 +158,7 @@ export function InitialPage() {
                     </GridLayoutDiv>
                 </ProjectsSection>
 
-                <SkillsSection id="skills">
+                <SkillsSection>
                     <GridLayoutDiv>
                         <SkillsContainerDiv>
                             <InfosSkillsArticle>
@@ -190,17 +181,7 @@ export function InitialPage() {
 
                 <ContactContainerFooter>
                     <GridLayoutDiv>
-                        <ContactContainerDiv>
-                            <ContactTextDiv>
-
-                                <img src={logoGitHub} />
-                                Link de contato e tals...
-
-                            </ContactTextDiv>
-                            <ImageContactDiv>
-                                <Lottie options={optionAnimatedContact} width={ 198 } height={ 198 } data-aos="zoom-in"/>
-                            </ImageContactDiv>
-                        </ContactContainerDiv>
+                        <Footer />
                     </GridLayoutDiv>
                 </ContactContainerFooter>
             </Main>

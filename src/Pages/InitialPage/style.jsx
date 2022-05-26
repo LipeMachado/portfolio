@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 // ==================== HEADER AND NAVBAR SECTION ====================
 
-export const Header = styled.header`
+export const Header = styled.header.attrs(() => ({
+    className: 'home'
+}))`
     font-family: var(--font-alata);
     width: 100%;
     background-color: var(--background);
@@ -37,7 +39,8 @@ export const NavListUl = styled.ul`
         margin-left: 35px;
         cursor: pointer;
         font-size: 1.3rem;
-        
+        margin-right: 10px;
+
         a {
             transition: all ease-in-out 0.3s;
 
@@ -168,7 +171,9 @@ export const HomeImageSvg = styled.img`
 
 // ==================== WHO AM I SECTION ====================
 
-export const WhoAmISection = styled.section`
+export const WhoAmISection = styled.section.attrs(() => ({
+    id: 'whoAmI'
+}))`
     background-color: var(--background-light);
     padding: 96px 48px;
 `;
@@ -219,7 +224,9 @@ export const WhoAmINameP = styled.p`
 
 // ==================== PROJECTS SECTION ====================
 
-export const ProjectsSection = styled.section`
+export const ProjectsSection = styled.section.attrs(() => ({
+    id: 'projects'
+}))`
     background-color: var(--background);
     display: flex;
     padding: 2rem 5rem 7rem 5rem;
@@ -246,7 +253,9 @@ export const ProjectsContainerDiv = styled.div`
 
 // ==================== SKILLS SECTION ====================
 
-export const SkillsSection = styled.section`
+export const SkillsSection = styled.section.attrs(() => ({
+    id: 'skills'
+}))`
     background-color: var(--background-light);
     padding: 96px 48px;
 `;
@@ -295,33 +304,13 @@ export const CardSkillsContainerDiv = styled.div`
 
 // =================== CONTACT SECTION ====================
 
-export const ContactContainerFooter = styled.footer`
+export const ContactContainerFooter = styled.footer.attrs(() => ({
+    id: 'contact'
+}))`
     font-family: var(--font-alata);
-    width: 100%;
+    padding: 96px 48px;
     background-color: var(--background-light);
     color: var(--white);
     border-top: 1px solid var(--border-separate);
 `;
 
-export const ContactContainerDiv = styled.div`
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-`;
-
-export const ImageContactDiv = styled.div`
-    display: flex;
-    justify-content: center;
-
-    @media only screen and (max-width: 1200px){
-        display: none;
-    }
-`;
-
-export const ContactTextDiv = styled.div`
-    display: flex;
-    align-items: center;
-`;

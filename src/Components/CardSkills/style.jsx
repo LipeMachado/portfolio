@@ -11,7 +11,7 @@ export const CardSkillsArticle = styled.article`
     background-color: var(--background);
     position: relative;
     border: 2px solid var(--border-separate);
-    transition: 1s all ease;
+    transition: 1s all ease-in-out;
     
 
     &:hover {
