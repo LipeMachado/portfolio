@@ -116,7 +116,7 @@ export function InitialPage() {
                                     <br />
                                     <TypeAnimation
                                         cursor={true}
-                                        sequence={['Felipe Silva Machado', 1000]}
+                                        sequence={['Felipe Silva Machado', 2000]}
                                         wrapper="h1"
                                         repeat={1}
                                     />
