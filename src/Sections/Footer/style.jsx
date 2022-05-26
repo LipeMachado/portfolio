@@ -50,7 +50,11 @@ export const ContactIndexsUl = styled.ul`
 `;
 
 export const ContactIndexsDiv = styled.div`
-    max-width: 200px;
+    display: flex;
+
+    @media only screen and (max-width: 425px){
+        display: block;
+    }
 
     li {
         padding: 5px;

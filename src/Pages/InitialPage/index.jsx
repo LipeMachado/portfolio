@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import Lottie from 'react-lottie';
 import { Link } from 'react-scroll';
 import { List } from 'phosphor-react';
+import TypeAnimation from 'react-type-animation';
 
 import {
     Header,
@@ -16,7 +17,6 @@ import {
     HomeDiv,
     HomeContainerTextDiv,
     HomeTextDiv,
-    HomeTextNameH1,
     HomeContainerImageDiv,
     WhoAmISection,
     WhoAmIContainerDiv,
@@ -113,10 +113,13 @@ export function InitialPage() {
                             <HomeContainerTextDiv>
                                 <HomeTextDiv>
                                     Hi, I'm
-                                    <br/>
-                                    <HomeTextNameH1 data-aos="fade-right">
-                                        Felipe Silva <span data-aos="fade" data-aos-delay="1000">.</span>
-                                    </HomeTextNameH1>
+                                    <br />
+                                    <TypeAnimation
+                                        cursor={true}
+                                        sequence={['Felipe Silva Machado', 1000, '']}
+                                        wrapper="h1"
+                                        repeat={Infinity}
+                                    />
                                     Front-end developer
                                 </HomeTextDiv>
                             </HomeContainerTextDiv>

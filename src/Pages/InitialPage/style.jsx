@@ -141,16 +141,16 @@ export const HomeContainerTextDiv = styled.div`
 export const HomeTextDiv = styled.div`
     font-size: 2rem;
     font-weight: 400;
-`;
-
-export const HomeTextNameH1 = styled.h1`
-    font-family: var(--font-ibm-plex-sans);
 
     span {
         font-size: 3rem;
         color: var(--purple-light);
         font-family: none;
     }
+`;
+
+export const HomeTextNameH1 = styled.h1`
+    font-family: var(--font-ibm-plex-sans);
 `;
 
 export const HomeContainerImageDiv = styled.div.attrs(() => ({
