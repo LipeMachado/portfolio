@@ -1,10 +1,8 @@
 import React from "react";
-import Lottie from 'react-lottie';
 import { Link } from 'react-scroll';
 import { 
     ContactContainerDiv,
-    ImageContactDiv,
-    ContactTextDiv,
+    ContactContentDiv,
     ContactLogosUl,
     ContactIndexsUl,
     ContactIndexsDiv
@@ -18,15 +16,6 @@ import contactAnimated from '../../Assets/animatedImages/contact.json'
 
 export function Footer() {
 
-    const optionAnimatedContact = {
-        loop: true,
-        autoplay: true,
-        animationData: contactAnimated,
-        rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice',
-        },
-    };
-
     const scrollUp = () => {
         window.scrollTo({
             top: 0,
@@ -36,10 +25,7 @@ export function Footer() {
 
     return (
         <ContactContainerDiv>
-            <ImageContactDiv>
-                {/* <Lottie options={optionAnimatedContact} width={ 198 } height={ 198 } data-aos="zoom-in"/> */}
-            </ImageContactDiv>
-            <ContactTextDiv>
+            <ContactContentDiv>
                 <ContactLogosUl>
                     <li><img src={logoGitHub} /></li>
                     <li><img src={logoLinkedIn} /></li>
@@ -53,7 +39,7 @@ export function Footer() {
                         <li><Link to="skills">Skills</Link></li>
                     </ContactIndexsDiv>
                 </ContactIndexsUl>
-            </ContactTextDiv>
+            </ContactContentDiv>
         </ContactContainerDiv>
     );
 }

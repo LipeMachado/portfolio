@@ -9,16 +9,7 @@ export const ContactContainerDiv = styled.div`
     height: auto;
 `;
 
-export const ImageContactDiv = styled.div`
-    display: flex;
-    justify-content: center;
-
-    @media only screen and (max-width: 1200px){
-        display: none;
-    }
-`;
-
-export const ContactTextDiv = styled.div`
+export const ContactContentDiv = styled.div`
     display: block;
 `;
 
