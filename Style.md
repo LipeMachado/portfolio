@@ -2,13 +2,17 @@
 
 ## Colors
 
-- Background: hsl(217, 54%, 11%)
-- Scrollbar: #6610f2
-- Fonte NavBar: #cccccc
-
-## Typography
-
-
+- Background: #0e091b;
+- Background Transparent: #18052df8;
+- Background Black: #060509;
+- Background Light: #130f1f;
+- Background Scroll: #6610f2;
+- White: #ffffff;
+- Blue: #2d7cd7;
+- Gray: #cccccc;
+- Purple: #8352FD;
+- Purple Light: #894ee7;
+- Border Separate: rgba(114, 114, 126, 0.2);
 
 ### Font
 
