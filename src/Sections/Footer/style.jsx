@@ -13,20 +13,20 @@ export const ContactContentDiv = styled.div`
     display: block;
 `;
 
-export const ContactLogosUl = styled.ul`
+export const ContactLogosDiv = styled.div`
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 
-    li {
+    a {
         padding: 10px;
         margin: 10px;
         border: 2px solid var(--border-separate);
         transition: all 0.5s ease-in-out;
         cursor: pointer;
-
+        
         &:hover {
             border: 2px solid var(--white);
         }
