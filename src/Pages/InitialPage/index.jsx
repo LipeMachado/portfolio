@@ -90,7 +90,7 @@ export function InitialPage() {
             <Header>
                 <GridLayoutDiv>
                     <NavBarNav>
-                        <h1 id="teste" data-aos="zoom-in">POWFOLIO</h1>
+                        <h1 id="teste" data-aos="zoom-in">POW.IO</h1>
                         <NavListUl>
                             <li><Link to="whoAmI">Who I am?</Link></li>
                             <li><Link to="projects">Projects</Link></li>
@@ -111,7 +111,7 @@ export function InitialPage() {
                                     Hi, I'm
                                     <br />
                                     <TypeAnimation
-                                        cursor={true}
+                                        cursor={false}
                                         sequence={['Felipe Silva Machado', 2000]}
                                         wrapper="h1"
                                         repeat={1}
