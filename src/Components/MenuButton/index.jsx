@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import {
     ListMenuIconContainerDiv,
     MenuListContainerDiv,
@@ -22,17 +23,18 @@ export function MenuButton() {
             <ListMenuIconContainerDiv onClick={ToggleMode}>
                 <List size={32} />
             </ListMenuIconContainerDiv>
-        
+
             <MenuListContainerDiv style={{ display: active ? "flex" : "none" }}>
                 <MenuListCloseIconDiv onClick={ToggleMode}>
                     <X size={32} />
                 </MenuListCloseIconDiv>
                 <MenuListDiv>
                     <MenuListItemsUl>
-                        <li>HOME</li>
-                        <li>WHO I AM</li>
-                        <li>SKILLS</li>
-                        <li>CONTACTS</li>
+                        <li><Link to="home" onClick={ToggleMode}>HOME</Link></li>
+                        <li><Link to="whoIAm" onClick={ToggleMode}>WHO I AM</Link></li>
+                        <li><Link to="projects" onClick={ToggleMode}>PROJECTS</Link></li>
+                        <li><Link to="skills" onClick={ToggleMode}>SKILLS</Link></li>
+                        <li><Link to="contact" onClick={ToggleMode}>CONTACTS</Link></li>                
                     </MenuListItemsUl>
                 </MenuListDiv>
             </MenuListContainerDiv>

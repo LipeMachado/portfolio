@@ -31,7 +31,7 @@ export const MenuListContainerDiv = styled.div`
 
 export const MenuListCloseIconDiv = styled.div`
     position: absolute;
-    top: 13px;
+    top: 17px;
     right: 32px;
 `;
 
@@ -45,5 +45,9 @@ export const MenuListItemsUl = styled.div`
     li {
         padding-bottom: 20px;
         padding-top: 20px;
+
+        a {
+            cursor: pointer;
+        }
     }
 `;
