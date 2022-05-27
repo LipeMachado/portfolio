@@ -3,14 +3,12 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Lottie from 'react-lottie';
 import { Link } from 'react-scroll';
-import { List } from 'phosphor-react';
 import TypeAnimation from 'react-type-animation';
 
 import {
     Header,
     NavBarNav,
     NavListUl,
-    ListMenuIconContainerDiv,
     Main,
     HomeSection,
     GridLayoutDiv,
@@ -39,6 +37,8 @@ import {
 import { CardProjects } from '../../Components/CardProjects/'
 import { ScrollTop } from '../../Components/ScrollTop/'
 import { CardSkills } from '../../Components/CardSkills/'
+import { MenuButton } from '../../Components/MenuButton'
+
 import { Footer } from '../../Sections/Footer/'
 
 import nftCard from '../../Assets/nftCard.jpg'
@@ -85,8 +85,6 @@ export function InitialPage() {
         },
     };
 
-    
-
     return (
         <>
             <Header>
@@ -94,14 +92,12 @@ export function InitialPage() {
                     <NavBarNav>
                         <h1 id="teste" data-aos="zoom-in">POWFOLIO</h1>
                         <NavListUl>
-                            <li><Link to="whoAmI">Who am I?</Link></li>
+                            <li><Link to="whoAmI">Who I am?</Link></li>
                             <li><Link to="projects">Projects</Link></li>
                             <li><Link to="skills">Skills</Link></li>
                             <li><Link to="contact">Contact</Link></li>
                         </NavListUl>
-                        <ListMenuIconContainerDiv>
-                            <List size={32} />
-                        </ListMenuIconContainerDiv>
+                        <MenuButton />
                     </NavBarNav>
                 </GridLayoutDiv>
             </Header>
@@ -187,7 +183,9 @@ export function InitialPage() {
                         <Footer />
                     </GridLayoutDiv>
                 </ContactContainerFooter>
+
             </Main>
+
             <ScrollTop />
         </>
     );

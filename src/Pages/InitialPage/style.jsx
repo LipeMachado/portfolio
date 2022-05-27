@@ -83,22 +83,6 @@ export const NavListUl = styled.ul`
     }
 `;
 
-export const ListMenuIconContainerDiv = styled.div`
-    display: none;
-
-    svg {
-    
-        &:hover {
-            color: green;
-            cursor: pointer;
-        }
-    }
-
-    @media only screen and (max-width: 992px) {
-        display: block;
-    }
-`;
-
 // ==================== MAIN SECTION ====================
 
 export const Main = styled.main`

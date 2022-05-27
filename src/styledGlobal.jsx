@@ -34,6 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 
     :root {
         --background: #0e091b;
+        --background-transparent: #18052df8;
         --background-black: #060509;
         --background-light: #130f1f;
         --scroll-background: #6610f2;
