@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const WhoAmIContainerDiv = styled.div`
+export const WhoIAmContainerDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 `;
 
-export const ImageWhoAmIDiv = styled.div`
+export const ImageWhoIAmDiv = styled.div`
     display: flex;
     justify-content: center;
 
@@ -16,11 +16,11 @@ export const ImageWhoAmIDiv = styled.div`
     }
 `;
 
-export const WhoAmITextDiv = styled.div`
+export const WhoIAmTextDiv = styled.div`
     max-width: 590px;
 `;
 
-export const WhoAmINameH2 = styled.h2`
+export const WhoIAmNameH2 = styled.h2`
     font-size: 2.5rem;
     margin-bottom: 1rem;
 
@@ -35,7 +35,7 @@ export const WhoAmINameH2 = styled.h2`
     }
 `;
 
-export const WhoAmINameP = styled.p`
+export const WhoIAmNameP = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
