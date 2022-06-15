@@ -12,6 +12,7 @@ import profileCard from '../../Assets/profileCard.jpg'
 import qrCode from '../../Assets/qrCode.jpg'
 import statsPreview from '../../Assets/statsPreview.jpg'
 import codarWebsite from '../../Assets/codarWebsite.jpeg'
+import portfolio from '../../Assets/portfolio.jpeg'
 
 export function Projects() {
     return (
@@ -24,6 +25,7 @@ export function Projects() {
                 <CardProjects src={qrCode} href={"https://github.com/LipeMachado/qrCode-Challenge"} />
                 <CardProjects src={statsPreview} href={"https://github.com/LipeMachado/statsPreview-Challenge"} />
                 <CardProjects src={codarWebsite} href={"https://github.com/LipeMachado/codar-Challenge"} />
+                <CardProjects src={portfolio} href={"https://github.com/LipeMachado/portfolio"} />
             </ProjectsContainerDiv>
         </>
     );
