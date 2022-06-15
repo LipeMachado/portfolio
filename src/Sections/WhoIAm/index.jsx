@@ -29,8 +29,11 @@ export function WhoIAm() {
             <WhoAmITextDiv>
                 <WhoAmINameH2>Who I am <span>.</span></WhoAmINameH2>
                 <WhoAmINameP>
-                    Hi, my name is Felipe Silva. I'm a frontend developer.
-                    I develop responsive and minimalist websites.
+                    Hello, my name is Felipe Silva Machado. I am a front-end developer.
+                    I develop responsive and minimalistic websites. I started in the programming world when I was 15 years old,
+                    I used to look at games and would like to know how they worked, soon after I started studying python,
+                    and was looking for how websites worked, and I got interested in developing websites.
+                    Today I am in college, studying Computer Science. And I want to become a great professional.
                 </WhoAmINameP>
             </WhoAmITextDiv>
         </WhoAmIContainerDiv>

@@ -17,7 +17,7 @@ export const ImageWhoAmIDiv = styled.div`
 `;
 
 export const WhoAmITextDiv = styled.div`
-    max-width: 500px;
+    max-width: 590px;
 `;
 
 export const WhoAmINameH2 = styled.h2`
@@ -38,6 +38,8 @@ export const WhoAmINameH2 = styled.h2`
 export const WhoAmINameP = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
 
     @media only screen and (max-width: 1200px){
         text-align: center;
