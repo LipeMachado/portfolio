@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'react-lottie';
 import {
-    WhoAmIContainerDiv,
+    WhoIAmContainerDiv,
     ImageWhoIAmDiv,
     WhoIAmTextDiv,
     WhoIAmNameH2,
@@ -22,7 +22,7 @@ export function WhoIAm() {
     };
 
     return (
-        <WhoAmIContainerDiv>
+        <WhoIAmContainerDiv>
             <ImageWhoIAmDiv>
                 <Lottie options={optionAnimatedWhoIAm} width={ 400 } height={ 400 } data-aos="zoom-in"/>
             </ImageWhoIAmDiv>
@@ -36,6 +36,6 @@ export function WhoIAm() {
                     Today I am in college, studying Computer Science.
                 </WhoIAmNameP>
             </WhoIAmTextDiv>
-        </WhoAmIContainerDiv>
+        </WhoIAmContainerDiv>
     );
 }
