@@ -1,19 +1,45 @@
 import styled from 'styled-components';
 
-export const ListMenuIconContainerDiv = styled.div`
+export const ListMenuMobileIconContainerDiv = styled.div`
     display: none;
-
-    svg {
-    
-        &:hover {
-            cursor: pointer;
-        }
-    }
+    cursor: pointer;
 
     @media only screen and (max-width: 992px) {
-        display: flex;
+        display: block;
+    }
+
+    div {
+        width: 32px;
+        height: 1px;
+        background-color: #fafafa;
+        margin: 8px;
+        transition: 0.4s;
+    }
+
+    &.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    &.active .line2 {
+        opacity: 0;
+    }
+
+    &.active .line3 {
+        transform: rotate(45deg) translate(-5px, -5px);
     }
 `;
+
+export const Line1Div = styled.div.attrs(() => ({
+    className: 'line1'
+}))``;
+
+export const Line2Div = styled.div.attrs(() => ({
+    className: 'line2'
+}))``;
+
+export const Line3Div = styled.div.attrs(() => ({
+    className: 'line3'
+}))``;
 
 export const MenuListContainerDiv = styled.div`
     position: absolute;

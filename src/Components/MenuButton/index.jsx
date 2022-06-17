@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import {
-    ListMenuIconContainerDiv,
+    ListMenuMobileIconContainerDiv,
+    Line1Div,
+    Line2Div,
+    Line3Div,
     MenuListContainerDiv,
-    MenuListCloseIconDiv,
     MenuListDiv,
-    MenuListItemsUl
+    MenuListItemsUl,
 } from './style.jsx';
-
-import { List, X } from 'phosphor-react';
 
 export function MenuButton() {
 
@@ -20,13 +20,11 @@ export function MenuButton() {
 
     return (
         <>
-            <ListMenuIconContainerDiv onClick={ToggleMode} style={{ display: active ? 'none' : 'flex' }} >
-                <List size={32} />
-            </ListMenuIconContainerDiv>
-
-            <MenuListCloseIconDiv onClick={ToggleMode} style={{ display: active ? "flex" : "none" }}>
-                <X size={32} />
-            </MenuListCloseIconDiv>
+            <ListMenuMobileIconContainerDiv onClick={ToggleMode} className={active ? 'active' : 'disable'}>
+                <Line1Div></Line1Div>
+                <Line2Div></Line2Div>
+                <Line3Div></Line3Div>
+            </ListMenuMobileIconContainerDiv>
 
             <MenuListContainerDiv style={{ display: active ? "flex" : "none" }}>
                 <MenuListDiv>
