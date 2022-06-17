@@ -7,7 +7,10 @@ export const Header = styled.header.attrs(() => ({
 }))`
     font-family: var(--font-alata);
     width: 100%;
-    background-color: var(--background);
+    background-color: var(--background-black-transparent);
+    backdrop-filter: blur(24px);
+    position: fixed;
+    z-index: 99;
     color: var(--white);
     border-bottom: 1px solid var(--border-separate);
 `;

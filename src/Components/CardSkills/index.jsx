@@ -29,7 +29,7 @@ export function CardSkills(props) {
     }, []);
 
     return (
-        <CardSkillsArticle className={props.className} data-aos="zoom-in" >
+        <CardSkillsArticle className={props.className} data-aos="zoom-in">
             <span></span>
             <img src={props.src} />
         </CardSkillsArticle>

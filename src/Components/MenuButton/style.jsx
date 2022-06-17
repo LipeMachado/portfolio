@@ -17,26 +17,25 @@ export const ListMenuIconContainerDiv = styled.div`
 `;
 
 export const MenuListContainerDiv = styled.div`
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    top: 10.2vh;
     right: 0;
+    width: 100vw;
+    height: 90vh;
+    z-index: 99;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--background-transparent);
-    z-index: 1;
+    background-color: var(--background);
 `;
 
 export const MenuListCloseIconDiv = styled.div`
     position: absolute;
-    top: 17px;
     right: 32px;
 `;
 
 export const MenuListDiv = styled.div`
-    font-size: 35px;
+    font-size: 30px;
 `;
 
 export const MenuListItemsUl = styled.div`
@@ -44,10 +43,11 @@ export const MenuListItemsUl = styled.div`
 
     li {
         padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 15px;
 
         a {
             cursor: pointer;
+            color: var(--gray);
         }
     }
 `;
