@@ -20,7 +20,7 @@ export function MenuButton() {
 
     return (
         <>
-            <ListMenuIconContainerDiv onClick={ToggleMode} style={{ display: active ? "none" : "flex" }}>
+            <ListMenuIconContainerDiv onClick={ToggleMode} style={{ display: active ? 'none' : 'flex' }} >
                 <List size={32} />
             </ListMenuIconContainerDiv>
 
@@ -29,7 +29,6 @@ export function MenuButton() {
             </MenuListCloseIconDiv>
 
             <MenuListContainerDiv style={{ display: active ? "flex" : "none" }}>
-                
                 <MenuListDiv>
                     <MenuListItemsUl>
                         <li><Link to="home" onClick={ToggleMode}>HOME</Link></li>

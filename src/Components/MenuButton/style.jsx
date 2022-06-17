@@ -6,13 +6,12 @@ export const ListMenuIconContainerDiv = styled.div`
     svg {
     
         &:hover {
-            color: var(--purple-light);
             cursor: pointer;
         }
     }
 
     @media only screen and (max-width: 992px) {
-        display: block;
+        display: flex;
     }
 `;
 
@@ -32,6 +31,7 @@ export const MenuListContainerDiv = styled.div`
 export const MenuListCloseIconDiv = styled.div`
     position: absolute;
     right: 32px;
+    cursor: pointer;
 `;
 
 export const MenuListDiv = styled.div`
