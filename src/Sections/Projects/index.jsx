@@ -19,7 +19,7 @@ export function Projects() {
         <>
             <ProjectsTitleH1>Projects</ProjectsTitleH1>
             <ProjectsContainerDiv>
-                <CardProjects src={nftCard} href={"https://github.com/LipeMachado/nftCard-Challenge"}/>
+                <CardProjects src={nftCard} href={"https://github.com/LipeMachado/nftCard-Challenge"} />
                 <CardProjects src={orderSummary} href={"https://github.com/LipeMachado/orderSummary-Challenge"} />
                 <CardProjects src={profileCard} href={"https://github.com/LipeMachado/profileCard-Challenge"} />
                 <CardProjects src={qrCode} href={"https://github.com/LipeMachado/qrCode-Challenge"} />

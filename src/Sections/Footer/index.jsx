@@ -31,9 +31,12 @@ export function Footer() {
                 </ContactLogosDiv>
                 <ContactIndexsUl>
                     <ContactIndexsDiv>
-                        <li><Link to="home">Home <span>|</span></Link></li>
-                        <li><Link to="whoAmI">Who am I? <span>|</span></Link></li>
-                        <li><Link to="projects">Projects <span>|</span></Link></li>
+                        <li><Link to="home">Home</Link></li>
+                        <li><span>|</span></li>
+                        <li><Link to="whoAmI">Who am I?</Link></li>
+                        <li><span>|</span></li>
+                        <li><Link to="projects">Projects</Link></li>
+                        <li><span>|</span></li>
                         <li><Link to="skills">Skills</Link></li>
                     </ContactIndexsDiv>
                 </ContactIndexsUl>

@@ -38,7 +38,7 @@ export const WhoIAmNameH2 = styled.h2`
 export const WhoIAmNameP = styled.p`
     font-size: 1.2rem;
     font-weight: 300;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.01rem;
     line-height: 1.8rem;
 
     @media only screen and (max-width: 1200px){

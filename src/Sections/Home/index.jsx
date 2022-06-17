@@ -37,7 +37,7 @@ export function Home() {
                     Front-end developer
                 </HomeTextDiv>
             </HomeContainerTextDiv>
-            <HomeContainerImageDiv>
+            <HomeContainerImageDiv data-aos="zoom-in-left">
                 <Lottie options={optionAnimatedHome} width={ 500 } height={ 500 } data-aos="zoom-in"/>
             </HomeContainerImageDiv>
         </HomeDiv>

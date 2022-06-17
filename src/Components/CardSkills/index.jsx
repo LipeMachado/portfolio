@@ -24,7 +24,7 @@ export function CardSkills(props) {
         hoverChangeInformations(`.${props.className}`, listTexts[props.className])
 
         Aos.init({
-            duration: 1500
+            duration: 2000
         });
     }, []);
 

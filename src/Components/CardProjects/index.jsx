@@ -10,7 +10,7 @@ import {
 export function CardProjects(props) {
     useEffect(() => {
         Aos.init({
-            duration: 1200,
+            duration: 2000,
         });
     })
 

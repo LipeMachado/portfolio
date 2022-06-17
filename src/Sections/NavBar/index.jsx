@@ -10,7 +10,7 @@ import { MenuButton } from '../../Components/MenuButton'
 export function NavBar() {
     return (
         <NavBarNav>
-            <h1 id="teste" data-aos="zoom-in">POW.IO</h1>
+            <h1 id="teste" data-aos="zoom-in-down">POW.IO</h1>
             <NavListUl>
                 <li><Link to="whoIAm">Who I am?</Link></li>
                 <li><Link to="projects">Projects</Link></li>
