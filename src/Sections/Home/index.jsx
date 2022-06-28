@@ -9,7 +9,7 @@ import {
     HomeContainerImageDiv
 } from './style.jsx';
 
-import developerAnimated from '../../Assets/animatedImages/develper.json'
+import developerAnimated from '../../Assets/animatedImages/developer.json'
 
 export function Home() {
 
