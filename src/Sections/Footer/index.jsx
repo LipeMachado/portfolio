@@ -24,6 +24,10 @@ export function Footer() {
         })
     }
 
+    const curriculoViewContent = () => {
+        fbq('track', 'ViewContent');
+    }
+
     return (
         <ContactContainerDiv>
             <ContactContentDiv>
@@ -31,7 +35,7 @@ export function Footer() {
                     <a href="http://github.com/LipeMachado" target="_blank"><img src={logoGitHub} /></a>
                     <a href="https://www.linkedin.com/in/felipe-silva-machado-676b70186/" target="_blank"><img src={logoLinkedIn}/></a>
                     <a href="https://www.instagram.com/lipe_machado765/" target="_blank"><img src={logoInstagram}/></a>
-                    <a href={ArchiveCurriculo} download="Curriculo - Felipe Silva Machado"><img src={logoCurriculo}/></a>
+                    <a href={ArchiveCurriculo} download="Curriculo - Felipe Silva Machado" onClick={curriculoViewContent}><img src={logoCurriculo}/></a>
                 </ContactLogosDiv>
                 <ContactIndexsUl>
                     <ContactIndexsDiv>
