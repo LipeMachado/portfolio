@@ -24,18 +24,30 @@ export function Footer() {
         })
     }
 
-    const curriculoViewContent = () => {
-        fbq('track', 'ViewContent');
+    const gitHubView = () => {
+        fbq('track', 'View GitHub');
+    }
+
+    const linkedInView = () => {
+        fbq('track', 'View LinkedIn');
+    }
+
+    const instagramView = () => {
+        fbq('track', 'View Instagram');
+    }
+
+    const curriculoView = () => {
+        fbq('track', 'View Curriculo');
     }
 
     return (
         <ContactContainerDiv>
             <ContactContentDiv>
                 <ContactLogosDiv>
-                    <a href="http://github.com/LipeMachado" target="_blank" onClick={curriculoViewContent}><img src={logoGitHub} /></a>
-                    <a href="https://www.linkedin.com/in/felipe-silva-machado-676b70186/" target="_blank" onClick={curriculoViewContent}><img src={logoLinkedIn}/></a>
-                    <a href="https://www.instagram.com/lipe_machado765/" target="_blank" onClick={curriculoViewContent}><img src={logoInstagram}/></a>
-                    <a href={ArchiveCurriculo} download="Curriculo - Felipe Silva Machado" onClick={curriculoViewContent}><img src={logoCurriculo}/></a>
+                    <a href="http://github.com/LipeMachado" target="_blank" onClick={gitHubView}><img src={logoGitHub} /></a>
+                    <a href="https://www.linkedin.com/in/felipe-silva-machado-676b70186/" target="_blank" onClick={linkedInView}><img src={logoLinkedIn}/></a>
+                    <a href="https://www.instagram.com/lipe_machado765/" target="_blank" onClick={instagramView}><img src={logoInstagram}/></a>
+                    <a href={ArchiveCurriculo} download="Curriculo - Felipe Silva Machado" onClick={curriculoView}><img src={logoCurriculo}/></a>
                 </ContactLogosDiv>
                 <ContactIndexsUl>
                     <ContactIndexsDiv>
