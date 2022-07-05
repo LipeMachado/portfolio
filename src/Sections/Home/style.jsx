@@ -7,7 +7,7 @@ export const HomeDiv = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 1200px){
         display: flex;
         justify-content: center;
         text-align: center;
@@ -17,7 +17,7 @@ export const HomeDiv = styled.div`
 export const HomeContainerTextDiv = styled.div`
     width: 50%;
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 1200px){
         width: 100%;
     }
 `;
@@ -40,7 +40,7 @@ export const HomeTextNameH1 = styled.h1`
 export const HomeContainerImageDiv = styled.div.attrs(() => ({
     className: 'animatedImage'
 }))`
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 1200px){
         display: none;
     }
 `;

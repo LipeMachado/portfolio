@@ -12,7 +12,7 @@ export const NavBarNav = styled.nav`
         cursor: default;
     }
 
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 1350px){
         padding: 0 2rem;
     }
 `;
@@ -20,17 +20,18 @@ export const NavBarNav = styled.nav`
 export const NavListUl = styled.ul`
     font-family: var(--font-ibm-plex-sans);
     display: flex;
+    align-items: center;
     color: var(--gray);
     list-style: none;
 
     li {
         margin-left: 35px;
-        cursor: pointer;
         font-size: 1.3rem;
         margin-right: 10px;
 
         a {
             transition: all ease-in-out 0.3s;
+            cursor: pointer;
 
             &:hover {
                 color: var(--purple-light);
@@ -66,7 +67,18 @@ export const NavListUl = styled.ul`
         }
     }
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1300px) {
         display: none;
+    }
+`;
+
+export const LanguageLi = styled.li`
+    margin-top: 4px;
+    position: relative;
+
+    svg:hover {
+        transition: all 0.3s ease-in-out;
+        color: var(--purple-light);
+        cursor: pointer;
     }
 `;

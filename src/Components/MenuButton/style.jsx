@@ -4,7 +4,7 @@ export const ListMenuMobileIconContainerDiv = styled.div`
     display: none;
     cursor: pointer;
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1300px) {
         display: block;
     }
 

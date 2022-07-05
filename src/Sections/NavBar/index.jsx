@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import {
     NavBarNav,
-    NavListUl
+    NavListUl,
+    LanguageLi
 } from './style.jsx';
+import { Globe } from 'phosphor-react';
 import { i18n } from '../../translate/i18n'
 
-import { MenuButton } from '../../Components/MenuButton'
+import { MenuButton } from '../../Components/MenuButton/'
+import { Language } from '../../Components/Language/'
+
+const I18N_STORAGE_KEY = 'i18nextLng'
 
 export function NavBar() {
+    const [openLanguage, setOpenLanguage] = useState(false);
+
+    const changePtBr = () => {
+        localStorage.setItem(I18N_STORAGE_KEY, "pt-BR")
+        window.location = window.location
+    }
+
+    const changeEnUs = () => {
+        localStorage.setItem(I18N_STORAGE_KEY, "en-US")
+        window.location = window.location
+    }
+
     return (
         <NavBarNav>
             <h1 id="teste" data-aos="zoom-in-down">POW.IO</h1>
@@ -17,6 +34,10 @@ export function NavBar() {
                 <li><Link to="projects">{i18n.t('navBar.navBarProjects')}</Link></li>
                 <li><Link to="skills">{i18n.t('navBar.navBarSkills')}</Link></li>
                 <li><Link to="contact">{i18n.t('navBar.navBarContact')}</Link></li>
+                <LanguageLi onClick={() => { setOpenLanguage(!openLanguage) }}>
+                    <Globe size={23} />
+                    <Language PtBr={changePtBr} EnUs={changeEnUs} className={openLanguage ? 'active' : 'disabled'}/>
+                </LanguageLi>
             </NavListUl>
             <MenuButton />
         </NavBarNav>
