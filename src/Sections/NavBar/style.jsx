@@ -12,7 +12,7 @@ export const NavBarNav = styled.nav`
         cursor: default;
     }
 
-    @media only screen and (max-width: 1350px){
+    @media only screen and (max-width: 1200px){
         padding: 0 2rem;
     }
 `;
@@ -67,7 +67,7 @@ export const NavListUl = styled.ul`
         }
     }
 
-    @media only screen and (max-width: 1300px) {
+    @media only screen and (max-width: 1200px) {
         display: none;
     }
 `;
