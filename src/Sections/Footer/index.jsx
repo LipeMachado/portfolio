@@ -53,7 +53,7 @@ export function Footer() {
                     <ContactIndexsDiv>
                         <li><Link to="home">Home</Link></li>
                         <li><span>|</span></li>
-                        <li><Link to="whoIAm">Who am I?</Link></li>
+                        <li><Link to="whoIAm">Who I am?</Link></li>
                         <li><span>|</span></li>
                         <li><Link to="projects">Projects</Link></li>
                         <li><span>|</span></li>
