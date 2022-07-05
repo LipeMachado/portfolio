@@ -6,11 +6,10 @@ export const LanguageMenuDiv = styled.div`
     top: 50px;
     right: -85px;
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--background-transparent);
-    opacity: 0;
     transition: all 0.3s ease-in-out;
 
     span {
@@ -23,6 +22,6 @@ export const LanguageMenuDiv = styled.div`
     }
 
     &.active {
-        opacity: 1;
+        display: flex;
     }
 `;
