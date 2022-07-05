@@ -83,6 +83,7 @@ export const MenuMobileLanguageLi = styled.span`
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    color: var(--gray);
 
     span {
         cursor: pointer;
