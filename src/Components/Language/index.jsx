@@ -7,8 +7,8 @@ export function Language(props) {
 
     return (
         <LanguageMenuDiv className={props.className}>
-            <span onClick={props.PtBr}>pt-BR</span>
-            <span onClick={props.EnUs}>en-US</span>
+            <span onClick={props.PtBr}>PT-BR</span>
+            <span onClick={props.EnUs}>EN-US</span>
         </LanguageMenuDiv>
     );
 }
