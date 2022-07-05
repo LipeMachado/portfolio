@@ -5,6 +5,8 @@ import {
     CardSkillsArticle
 } from './style.jsx';
 
+import { i18n } from '../../translate/i18n'
+
 import listTexts from './listTexts.js';
 
 function hoverChangeInformations(classCardName, textInfoCard) {
@@ -15,7 +17,7 @@ function hoverChangeInformations(classCardName, textInfoCard) {
     })
     
     document.querySelector(classCardName).addEventListener('mouseout', () => {
-        changeInfos.innerHTML = `Hover the mouse cursor on the card to read`;
+        changeInfos.innerHTML = `${i18n.t('skills.skillsExample')}`;
     })
 }
 
