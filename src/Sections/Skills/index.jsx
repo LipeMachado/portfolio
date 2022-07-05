@@ -7,6 +7,8 @@ import {
     InfoSkillsParagraphP,
 } from './style.jsx';
 
+import { i18n } from '../../translate/i18n'
+
 import { CardSkills } from '../../Components/CardSkills/'
 
 import logoCss from '../../Assets/iconsSkills/logoCSS.svg'
@@ -22,8 +24,8 @@ export function Skills() {
     return (
         <SkillsContainerDiv>
             <InfosSkillsArticle>
-                <InfoSkillsH1>Skills</InfoSkillsH1>
-                <InfoSkillsParagraphP>Hover the mouse cursor on the card to read</InfoSkillsParagraphP>
+                <InfoSkillsH1>{i18n.t('skills.skillsTitle')}</InfoSkillsH1>
+                <InfoSkillsParagraphP>{i18n.t('skills.skillsExample')}</InfoSkillsParagraphP>
             </InfosSkillsArticle>
             <CardSkillsContainerDiv>
                 <CardSkills src={logoHtml} className={"html"}/>

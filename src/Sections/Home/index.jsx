@@ -1,13 +1,14 @@
 import React from 'react';
 import Lottie from 'react-lottie';
 import TypeAnimation from 'react-type-animation';
-
 import { 
     HomeDiv,
     HomeContainerTextDiv,
     HomeTextDiv,
     HomeContainerImageDiv
 } from './style.jsx';
+
+import { i18n } from '../../translate/i18n'
 
 import developerAnimated from '../../Assets/animatedImages/developer.json'
 
@@ -26,7 +27,7 @@ export function Home() {
         <HomeDiv>
             <HomeContainerTextDiv>
                 <HomeTextDiv>
-                    Hi, I'm
+                    {i18n.t('home.homeHello')}
                     <br />
                     <TypeAnimation
                         cursor={false}
@@ -34,7 +35,7 @@ export function Home() {
                         wrapper="h1"
                         repeat={1}
                     />
-                    Front-end developer
+                    {i18n.t('home.homeFrontEnd')}
                 </HomeTextDiv>
             </HomeContainerTextDiv>
             <HomeContainerImageDiv data-aos="zoom-in-left">

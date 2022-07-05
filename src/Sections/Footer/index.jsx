@@ -6,7 +6,9 @@ import {
     ContactLogosDiv,
     ContactIndexsUl,
     ContactIndexsDiv
- } from './style.jsx';
+} from './style.jsx';
+
+import { i18n } from '../../translate/i18n'
 
 import logoGitHub from '../../Assets/iconsContact/logoGitHub.svg'
 import logoLinkedIn from '../../Assets/iconsContact/logoLinkedIn.svg'
@@ -51,13 +53,13 @@ export function Footer() {
                 </ContactLogosDiv>
                 <ContactIndexsUl>
                     <ContactIndexsDiv>
-                        <li><Link to="home">Home</Link></li>
+                        <li><Link to="home">{i18n.t('footer.footerHome')}</Link></li>
                         <li><span>|</span></li>
-                        <li><Link to="whoIAm">Who I am?</Link></li>
+                        <li><Link to="whoIAm">{i18n.t('footer.footerWhoIAm')}</Link></li>
                         <li><span>|</span></li>
-                        <li><Link to="projects">Projects</Link></li>
+                        <li><Link to="projects">{i18n.t('footer.footerProjects')}</Link></li>
                         <li><span>|</span></li>
-                        <li><Link to="skills">Skills</Link></li>
+                        <li><Link to="skills">{i18n.t('footer.footerSkills')}</Link></li>
                     </ContactIndexsDiv>
                 </ContactIndexsUl>
             </ContactContentDiv>

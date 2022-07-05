@@ -12,7 +12,7 @@ export const messages = {
                 homeFrontEnd: 'Desenvolvedor Front-end'
             },
             whoIAm: {
-                whoIAmTitle: 'Quem sou eu?',
+                whoIAmTittle: 'Quem sou eu?',
                 whoIAmParagraph: 'Olá, o meu nome é Felipe Silva Machado. Sou um desenvolvedor front-end, desenvolvo sites responsivos e minimalistas. Comecei no mundo da programação quando tinha 15 anos, costumava ver jogos e gostaria de saber como funcionavam, logo comecei a estudar python, e estava à procura de como funcionavam os sites também, e fiquei interessado em desenvolvimento web. Hoje em dia sou programador, fotógrafo, editor de vídeo e designer.'
             },
             projects: {

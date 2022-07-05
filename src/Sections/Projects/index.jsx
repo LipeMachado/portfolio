@@ -4,6 +4,8 @@ import {
     ProjectsContainerDiv
 } from './style.jsx';
 
+import { i18n } from '../../translate/i18n'
+
 import { CardProjects } from '../../Components/CardProjects/'
 
 import nftCard from '../../Assets/nftCard.jpg'
@@ -17,7 +19,7 @@ import portfolio from '../../Assets/portfolio.jpeg'
 export function Projects() {
     return (
         <>
-            <ProjectsTitleH1>Projects</ProjectsTitleH1>
+            <ProjectsTitleH1>{i18n.t('projects.projectsTitle')}</ProjectsTitleH1>
             <ProjectsContainerDiv>
                 <CardProjects src={nftCard} href={"https://github.com/LipeMachado/nftCard-Challenge"} />
                 <CardProjects src={orderSummary} href={"https://github.com/LipeMachado/orderSummary-Challenge"} />
