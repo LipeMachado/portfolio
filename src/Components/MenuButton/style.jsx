@@ -69,11 +69,22 @@ export const MenuListItemsUl = styled.div`
 
     li {
         padding-bottom: 20px;
-        padding-top: 15px;
+        margin-top: 15px;
 
         a {
             cursor: pointer;
             color: var(--gray);
         }
+    }
+`;
+
+export const MenuMobileLanguageLi = styled.span`
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    span {
+        cursor: pointer;
     }
 `;
