@@ -40,11 +40,11 @@ export function MenuButton() {
             <MenuListContainerDiv style={{ display: active ? "flex" : "none" }}>
                 <MenuListDiv>
                     <MenuListItemsUl>
-                        <li><Link to="home" onClick={() => { setActive(!active) }}>HOME</Link></li>
-                        <li><Link to="whoIAm" onClick={() => { setActive(!active) }}>WHO I AM</Link></li>
-                        <li><Link to="projects" onClick={() => { setActive(!active) }}>PROJECTS</Link></li>
-                        <li><Link to="skills" onClick={() => { setActive(!active) }}>SKILLS</Link></li>
-                        <li><Link to="contact" onClick={() => { setActive(!active) }}>CONTACTS</Link></li>
+                        <li><Link to="home" onClick={() => { setActive(!active) }}>{i18n.t('menuMobile.menuMobileHome')}</Link></li>
+                        <li><Link to="whoIAm" onClick={() => { setActive(!active) }}>{i18n.t('menuMobile.menuMobileWhoIAm')}</Link></li>
+                        <li><Link to="projects" onClick={() => { setActive(!active) }}>{i18n.t('menuMobile.menuMobileProjects')}</Link></li>
+                        <li><Link to="skills" onClick={() => { setActive(!active) }}>{i18n.t('menuMobile.menuMobileSkills')}</Link></li>
+                        <li><Link to="contact" onClick={() => { setActive(!active) }}>{i18n.t('menuMobile.menuMobileContacts')}</Link></li>
                         <MenuMobileLanguageLi>
                             <span onClick={changePtBr}>PT-BR</span>
                             <span onClick={changeEnUs}>EN-US</span>

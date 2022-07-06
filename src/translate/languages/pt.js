@@ -35,6 +35,13 @@ export const messages = {
                 footerWhoIAm: 'Quem sou eu?',
                 footerProjects: 'Projetos',
                 footerSkills: 'Habilidades'
+            },
+            menuMobile: {
+                menuMobileHome: 'Início',
+                menuMobileWhoIAm: 'Quem sou eu?',
+                menuMobileProjects: 'Projetos',
+                menuMobileSkills: 'Habilidades',
+                menuMobileContacts: 'Contatos'
             }
         }
     }
