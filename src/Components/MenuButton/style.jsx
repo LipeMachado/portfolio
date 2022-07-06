@@ -69,7 +69,7 @@ export const MenuListItemsUl = styled.div`
 
     li {
         padding-bottom: 20px;
-        margin-top: 15px;
+        margin-top: 10px;
 
         a {
             cursor: pointer;
