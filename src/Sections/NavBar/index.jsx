@@ -48,10 +48,10 @@ export function NavBar() {
                     <Language PtBr={changePtBr} EnUs={changeEnUs} className={openLanguage ? 'active' : 'disabled'}/>
                 </LanguageLi>
                 <ThemeModeLi>
-                    <ThemeDarkIconDiv onClick={() => {setSwitchTheme(!switchTheme)}} className={switchTheme ? 'disabled' : 'active'} >
+                    <ThemeDarkIconDiv onClick={() => {setSwitchTheme(!switchTheme), alert('Coming soon')}} className={switchTheme ? 'disabled' : 'active'} >
                         <Moon size={23} />
                     </ThemeDarkIconDiv>
-                    <ThemeLightIconDiv onClick={() => {setSwitchTheme(!switchTheme)}} className={switchTheme ? 'active' : 'disabled'}>
+                    <ThemeLightIconDiv onClick={() => {setSwitchTheme(!switchTheme), alert('Coming soon')}} className={switchTheme ? 'active' : 'disabled'}>
                         <Sun size={23} />
                     </ThemeLightIconDiv>
                 </ThemeModeLi>
