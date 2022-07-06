@@ -82,3 +82,30 @@ export const LanguageLi = styled.li`
         cursor: pointer;
     }
 `;
+
+export const ThemeModeLi = styled.li`
+    margin-top: 4px;
+    position: relative;
+
+    svg:hover {
+        transition: all 0.3s ease-in-out;
+        color: var(--purple-light);
+        cursor: pointer;
+    }
+`;
+
+export const ThemeDarkIconDiv = styled.div`
+    display: none;
+
+    &.disabled {
+        display: block;
+    }
+`;
+
+export const ThemeLightIconDiv = styled.div`
+    display: block;
+
+    &.active {
+        display: none;
+    }
+`;

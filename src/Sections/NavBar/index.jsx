@@ -3,9 +3,12 @@ import { Link } from 'react-scroll';
 import {
     NavBarNav,
     NavListUl,
-    LanguageLi
+    LanguageLi,
+    ThemeModeLi,
+    ThemeDarkIconDiv,
+    ThemeLightIconDiv
 } from './style.jsx';
-import { Globe } from 'phosphor-react';
+import { Globe, Moon, Sun } from 'phosphor-react';
 import { i18n } from '../../translate/i18n'
 
 import { MenuButton } from '../../Components/MenuButton/'
@@ -30,6 +33,8 @@ export function NavBar() {
     const LanguageMenu = useRef(null)
     UseClickOutside(LanguageMenu, () => setOpenLanguage(false));
 
+    const [switchTheme, setSwitchTheme] = useState(false);
+
     return (
         <NavBarNav>
             <h1 id="teste" data-aos="zoom-in-down">POW.IO</h1>
@@ -42,6 +47,14 @@ export function NavBar() {
                     <Globe size={23} onClick={() => { setOpenLanguage(!openLanguage) }} />
                     <Language PtBr={changePtBr} EnUs={changeEnUs} className={openLanguage ? 'active' : 'disabled'}/>
                 </LanguageLi>
+                <ThemeModeLi>
+                    <ThemeDarkIconDiv onClick={() => {setSwitchTheme(!switchTheme)}} className={switchTheme ? 'disabled' : 'active'} >
+                        <Moon size={23} />
+                    </ThemeDarkIconDiv>
+                    <ThemeLightIconDiv onClick={() => {setSwitchTheme(!switchTheme)}} className={switchTheme ? 'active' : 'disabled'}>
+                        <Sun size={23} />
+                    </ThemeLightIconDiv>
+                </ThemeModeLi>
             </NavListUl>
             <MenuButton />
         </NavBarNav>
