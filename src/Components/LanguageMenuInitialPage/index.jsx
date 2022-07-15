@@ -3,7 +3,7 @@ import {
     LanguageMenuDiv
 } from './style.jsx';
 
-export function Language(props) {
+export function LanguageMenuInitialPage(props) {
 
     return (
         <LanguageMenuDiv className={props.className}>

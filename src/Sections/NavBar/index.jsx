@@ -12,7 +12,7 @@ import { Globe, Moon, Sun } from 'phosphor-react';
 import { i18n } from '../../translate/i18n'
 
 import { MenuButton } from '../../Components/MenuButton/'
-import { Language } from '../../Components/Language/'
+import { LanguageMenuInitialPage } from '../../Components/LanguageMenuInitialPage/'
 import { UseClickOutside } from '../../Components/UseClickOutside/'
 
 const I18N_STORAGE_KEY = 'i18nextLng'
@@ -45,7 +45,7 @@ export function NavBar() {
                 <li><Link to="contact">{i18n.t('navBar.navBarContact')}</Link></li>
                 <LanguageLi ref={LanguageMenu}>
                     <Globe size={23} onClick={() => { setOpenLanguage(!openLanguage) }} />
-                    <Language PtBr={changePtBr} EnUs={changeEnUs} className={openLanguage ? 'active' : 'disabled'}/>
+                    <LanguageMenuInitialPage PtBr={changePtBr} EnUs={changeEnUs} className={openLanguage ? 'active' : 'disabled'}/>
                 </LanguageLi>
                 <ThemeModeLi>
                     <ThemeDarkIconDiv onClick={() => {setSwitchTheme(!switchTheme), alert('Coming soon')}} className={switchTheme ? 'disabled' : 'active'} >
