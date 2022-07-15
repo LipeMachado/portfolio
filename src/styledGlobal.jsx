@@ -38,12 +38,15 @@ export const GlobalStyle = createGlobalStyle`
         --background-black: #060509;
         --background-black-transparent: rgba(10, 10, 25, 0.7);
         --background-light: #130f1f;
+        --background-page404: #161622;
         --scroll-background: #6610f2;
         --white: #ffffff;
         --purple-light: #894ee7;
         --blue: #2d7cd7;
         --purple: #8352FD;
+        --purple-hover: #9670f9;
         --gray: #cccccc;
+        --gray-transparent: rgba(255, 255, 255, 0.1); 
         --border-separate: rgba(114, 114, 126, 0.2);
         --font-outfit-light: Outfit300, sans-serif;
         --font-outfit-regular: Outfit400, sans-serif;
