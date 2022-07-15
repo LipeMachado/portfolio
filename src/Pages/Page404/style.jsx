@@ -69,3 +69,29 @@ export const Page404TextButtonDiv = styled.div`
         }
     }
 `;
+
+export const Page404LanguageDiv = styled.div`
+    font-family: var(--font-alata);
+    color: var(--white);
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-46%, -50%);
+
+    span {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        white-space: nowrap;
+
+        &:hover {
+            color: var(--purple-light);
+        }
+    }
+`;
+
+export const Page404LanguagePtBrSpan = styled.span`
+    margin-right: 20px;
+`;
+
+export const Page404LanguageEnUsSpan = styled.span``;

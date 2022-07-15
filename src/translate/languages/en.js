@@ -42,6 +42,10 @@ export const messages = {
                 menuMobileProjects: 'Projects',
                 menuMobileSkills: 'Skills',
                 menuMobileContacts: 'Contacts'
+            },
+            page404: {
+                page404Title: 'Page not found',
+                page404TextButton: 'Back to homepage'
             }
         }
     }
