@@ -19,7 +19,7 @@ export const Page404Numberh1 = styled.h1`
     user-select: none;
     letter-spacing: 2px;
     color: var(--gray-transparent);
-    
+
     @media only screen and (max-width: 550px){
         font-size: 150px;
     }
@@ -40,7 +40,7 @@ export const Page404TextH2 = styled.h2`
     white-space: nowrap;
 
     @media only screen and (max-width: 550px){
-        font-size: 30px;
+        font-size: 25px;
     }
 `;
 
@@ -59,13 +59,16 @@ export const Page404TextButtonDiv = styled.div`
         font-size: 16px;
         color: var(--white);
         transition: all 0.3s ease-in-out;
+        white-space: nowrap;
 
         &:hover {
             background-color: var(--purple-hover);
         }
         
         @media only screen and (max-width: 550px){
-            padding: 12px 20px;
+            padding: 12px 7px;
+            font-size: 15px;
+            margin-top: 10px;
         }
     }
 `;

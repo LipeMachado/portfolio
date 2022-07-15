@@ -40,7 +40,9 @@ export function Page404() {
                     <Page404Numberh1>404</Page404Numberh1>
                 </Page404ContainerDiv>
                 <Page404TextDiv>
-                    <Page404TextH2>{i18n.t('page404.page404Title')}</Page404TextH2>
+                    <div>
+                        <Page404TextH2>{i18n.t('page404.page404Title')}</Page404TextH2>
+                    </div>
                     <Page404TextButtonDiv>
                         <Link to="/">{i18n.t('page404.page404TextButton')}</Link>
                     </Page404TextButtonDiv>
